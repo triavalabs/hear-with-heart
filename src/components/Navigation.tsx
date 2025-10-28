@@ -1,0 +1,119 @@
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Phone, MapPin, Menu, X } from "lucide-react";
+
+const Navigation = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const handleScheduleClick = () => {
+    if (location.pathname === '/') {
+      const contactSection = document.getElementById('contact');
+      contactSection?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = '/#contact';
+    }
+    setIsMobileMenuOpen(false);
+  };
+
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'About Us', path: '/about' },
+    { name: 'Our Services', path: '/services' },
+    { name: 'Patient Resources', path: '/resources' },
+    { name: 'Testimonials', path: '/testimonials' },
+    { name: 'Contact', path: '/contact' },
+  ];
+
+  return (
+    <nav className="sticky top-0 z-50 bg-white shadow-md">
+      {/* Top Bar */}
+      <div className="bg-charcoal text-white py-2">
+        <div className="container mx-auto px-6 flex justify-between items-center text-sm">
+          <div className="flex items-center gap-4">
+            <a href="https://maps.google.com/?q=Oviedo,+FL" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-secondary transition-colors">
+              <MapPin className="h-4 w-4" />
+              <span className="hidden sm:inline">Oviedo, FL</span>
+            </a>
+            <a href="tel:+14073657555" className="flex items-center gap-1 hover:text-secondary transition-colors">
+              <Phone className="h-4 w-4" />
+              <span>(407) 365-7555</span>
+            </a>
+          </div>
+          <div className="text-xs hidden md:block">
+            Latest News
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navigation */}
+      <div className="container mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
+            <div className="text-2xl font-bold">
+              <span className="text-charcoal">Oviedo</span>{" "}
+              <span className="text-secondary">Hearing Center</span>
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`text-charcoal hover:text-secondary transition-colors font-medium ${
+                  location.pathname === link.path ? 'text-secondary' : ''
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Button
+              onClick={handleScheduleClick}
+              className="bg-secondary hover:bg-secondary/90 text-white"
+            >
+              Schedule Consultation
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden text-charcoal"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden mt-4 pb-4 space-y-3">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`block text-charcoal hover:text-secondary transition-colors font-medium py-2 ${
+                  location.pathname === link.path ? 'text-secondary' : ''
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Button
+              onClick={handleScheduleClick}
+              className="w-full bg-secondary hover:bg-secondary/90 text-white"
+            >
+              Schedule Consultation
+            </Button>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+};
+
+export default Navigation;
