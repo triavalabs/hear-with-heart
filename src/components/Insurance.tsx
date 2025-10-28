@@ -36,16 +36,20 @@ const Insurance = () => {
             <div className="relative">
               {/* First row - scrolling left */}
               <div className="overflow-hidden mb-8">
-                <div className="flex gap-12 animate-[scroll_30s_linear_infinite]">
+                <div className="flex gap-6 animate-[scroll_30s_linear_infinite]">
                   {[...insuranceProviders, ...insuranceProviders].map((provider, index) => (
                     <div 
                       key={`row1-${index}`}
-                      className="flex-shrink-0 text-3xl md:text-4xl font-bold text-white hover:scale-110 transition-transform duration-300 whitespace-nowrap"
+                      className="flex-shrink-0 px-8 py-4 rounded-full backdrop-blur-md border-2 hover:scale-110 transition-all duration-300 whitespace-nowrap"
                       style={{ 
-                        textShadow: '0 0 20px rgba(77, 193, 184, 0.5)',
+                        background: 'rgba(255, 255, 255, 0.1)',
+                        borderColor: 'rgba(77, 193, 184, 0.3)',
+                        boxShadow: '0 8px 32px 0 rgba(77, 193, 184, 0.37), inset 0 0 20px rgba(77, 193, 184, 0.2)',
                       }}
                     >
-                      {provider}
+                      <span className="text-2xl md:text-3xl font-bold text-white" style={{ textShadow: '0 0 20px rgba(77, 193, 184, 0.8)' }}>
+                        {provider}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -53,17 +57,26 @@ const Insurance = () => {
 
               {/* Second row - scrolling right */}
               <div className="overflow-hidden">
-                <div className="flex gap-12 animate-[scroll_35s_linear_infinite_reverse]">
+                <div className="flex gap-6 animate-[scroll_35s_linear_infinite_reverse]">
                   {[...insuranceProviders.slice().reverse(), ...insuranceProviders.slice().reverse()].map((provider, index) => (
                     <div 
                       key={`row2-${index}`}
-                      className="flex-shrink-0 text-2xl md:text-3xl font-semibold hover:scale-110 transition-transform duration-300 whitespace-nowrap"
+                      className="flex-shrink-0 px-8 py-4 rounded-full backdrop-blur-md border-2 hover:scale-110 transition-all duration-300 whitespace-nowrap"
                       style={{ 
-                        color: 'hsl(14, 85%, 54%)',
-                        textShadow: '0 0 15px rgba(236, 91, 40, 0.4)',
+                        background: 'rgba(236, 91, 40, 0.15)',
+                        borderColor: 'rgba(236, 91, 40, 0.4)',
+                        boxShadow: '0 8px 32px 0 rgba(236, 91, 40, 0.4), inset 0 0 20px rgba(236, 91, 40, 0.2)',
                       }}
                     >
-                      {provider}
+                      <span 
+                        className="text-xl md:text-2xl font-semibold"
+                        style={{ 
+                          color: 'hsl(14, 85%, 54%)',
+                          textShadow: '0 0 15px rgba(236, 91, 40, 0.8)',
+                        }}
+                      >
+                        {provider}
+                      </span>
                     </div>
                   ))}
                 </div>
