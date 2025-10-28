@@ -5,60 +5,52 @@ import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animationVariants
 
 const testimonials = [
   {
-    name: "Margaret Thompson",
-    text: "Dr. Smith and her team have been wonderful. They took the time to understand my needs and found the perfect hearing aids for me. I can finally enjoy conversations with my grandchildren again!",
+    name: "Sherry Young",
+    text: "Cynthia truly wants to help the hearing impaired. She works hard to find the perfect hearing aids based on your hearing loss and affordability. Her prices are very reasonable too! She is always kind and patient as well. I highly recommend her services🙂",
     rating: 5,
-    date: "2 weeks ago",
-    initials: "MT",
+    initials: "SY",
   },
   {
-    name: "Robert Jenkins",
-    text: "After 20 years of struggling with my hearing, I finally visited Oviedo Hearing Center. The difference has been life-changing. Professional, caring, and always available when I need adjustments.",
+    name: "Lisa Neu",
+    text: "After 22 yrs of dealing with my special needs daughters hearing aids, I have FINALLY found a TRUE licensed hearing aid specialist that does not rip the patient off like the big chains! (Belltone, etc) Once you buy from them, the hearing aids are serviced for life at no extra charge!",
     rating: 5,
-    date: "1 month ago",
-    initials: "RJ",
+    initials: "LN",
   },
   {
-    name: "Linda Martinez",
-    text: "The level of care and attention I receive here is outstanding. They treat me like family and always make sure my hearing aids are working perfectly. Highly recommend!",
+    name: "Rocky Roads",
+    text: "We were on vacation out of the state and left a message that one of my wife's hearing aids just stopped outputting any sound. OHC called us back after hours and walked us through a temporary fix until we got home to make an appointment. Thanks so much.",
     rating: 5,
-    date: "3 weeks ago",
-    initials: "LM",
+    initials: "RR",
   },
   {
-    name: "James Wilson",
-    text: "I've been a patient for over 10 years. Dr. Smith's expertise and genuine concern for her patients is evident in everything she does. I wouldn't go anywhere else.",
+    name: "John Larsen",
+    text: "Fantastic service. Great knowledgeable staff. Reasonable prices.",
     rating: 5,
-    date: "1 week ago",
-    initials: "JW",
+    initials: "JL",
   },
   {
-    name: "Susan Patterson",
-    text: "Outstanding service! The staff is knowledgeable, friendly, and patient. They answered all my questions and made me feel comfortable throughout the entire process.",
+    name: "John Gingrich",
+    text: "I was very pleased to find them and have them repair my broken hearing aid while far from home on vacation. Same day service and a fair price. Thank you!",
     rating: 5,
-    date: "4 days ago",
-    initials: "SP",
+    initials: "JG",
   },
   {
-    name: "Michael Chen",
-    text: "I was hesitant about getting hearing aids, but the team made it so easy. The technology is amazing and the support is unmatched. Thank you for giving me my confidence back!",
+    name: "Linda",
+    text: "Friendly staff, highly recommended. Actually listen (no pun intended) to your needs",
     rating: 5,
-    date: "2 months ago",
-    initials: "MC",
+    initials: "L",
   },
   {
-    name: "Barbara Davis",
-    text: "Professional, compassionate, and thorough. They took the time to find exactly what I needed. My hearing has improved dramatically and I couldn't be happier!",
+    name: "Roger Baird",
+    text: "I've owned my hearing aids almost 2 years and have needed assistance with a couple of issues. Cynthia and Linda have always been very helpful in getting the issues corrected in addition to being a pleasure to work with. I highly recommend them.",
     rating: 5,
-    date: "5 days ago",
-    initials: "BD",
+    initials: "RB",
   },
   {
-    name: "Thomas Anderson",
-    text: "Excellent experience from start to finish. The hearing evaluation was comprehensive and the fitting was perfect. Highly recommend to anyone experiencing hearing loss.",
+    name: "Gretchen Hyde",
+    text: "I've been with several hearing places and audiologists for 15 years. Cynthia Quinn is the best. She is so knowledgeable and helpful. No high power sales. Just very pleasant to work with. Very likable and reasonable. I recommend her over all the audiologists I've seen and definitely better than any of the hearing centers.",
     rating: 5,
-    date: "3 months ago",
-    initials: "TA",
+    initials: "GH",
   },
 ];
 
@@ -80,13 +72,10 @@ const ReviewCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) =>
       </div>
       <div className="flex-1 min-w-0">
         <h4 className="font-bold text-charcoal text-lg mb-1">{testimonial.name}</h4>
-        <div className="flex items-center gap-2 mb-2">
-          <div className="flex gap-0.5">
-            {Array.from({ length: testimonial.rating }).map((_, i) => (
-              <Star key={i} className="w-4 h-4 fill-burnt-orange text-burnt-orange" />
-            ))}
-          </div>
-          <span className="text-sm text-body-gray">{testimonial.date}</span>
+        <div className="flex gap-0.5 mb-2">
+          {Array.from({ length: testimonial.rating }).map((_, i) => (
+            <Star key={i} className="w-4 h-4 fill-burnt-orange text-burnt-orange" />
+          ))}
         </div>
       </div>
     </div>
