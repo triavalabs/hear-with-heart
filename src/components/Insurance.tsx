@@ -52,9 +52,13 @@ const Insurance = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeInUp}
           >
-            <Card className="border-2 border-muted bg-gradient-to-br from-charcoal via-charcoal to-secondary p-8 sm:p-12 md:p-16 overflow-hidden relative">
-            {/* Animated background effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/20 to-transparent animate-pulse"></div>
+            <Card className="border border-border-gray p-8 sm:p-12 md:p-16 overflow-hidden relative"
+              style={{
+                background: 'linear-gradient(135deg, #FFF8F4 0%, #E8F3F2 50%, #CCE7E4 100%)',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)'
+              }}>
+            {/* Subtle overlay for depth */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-transparent pointer-events-none"></div>
             
             <div className="relative">
               {/* First row - scrolling left */}
@@ -63,14 +67,14 @@ const Insurance = () => {
                   {[...insuranceProviders, ...insuranceProviders].map((provider, index) => (
                     <div 
                        key={`row1-${index}`}
-                       className="flex-shrink-0 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md border-2 hover:scale-110 transition-all duration-300 whitespace-nowrap"
+                       className="flex-shrink-0 px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 hover:scale-105 transition-all duration-300 whitespace-nowrap"
                       style={{ 
-                        background: 'rgba(255, 255, 255, 0.1)',
-                        borderColor: 'rgba(77, 193, 184, 0.3)',
-                        boxShadow: '0 8px 32px 0 rgba(77, 193, 184, 0.37), inset 0 0 20px rgba(77, 193, 184, 0.2)',
+                        background: 'rgba(255, 255, 255, 0.85)',
+                        borderColor: '#278C8C',
+                        boxShadow: '0 4px 12px rgba(39, 140, 140, 0.15)',
                       }}
                     >
-                      <span className="text-xl sm:text-2xl md:text-3xl font-bold text-white" style={{ textShadow: '0 0 20px rgba(77, 193, 184, 0.8)' }}>
+                      <span className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: '#278C8C' }}>
                         {provider}
                       </span>
                     </div>
@@ -84,18 +88,17 @@ const Insurance = () => {
                   {[...insuranceProviders.slice().reverse(), ...insuranceProviders.slice().reverse()].map((provider, index) => (
                     <div 
                        key={`row2-${index}`}
-                       className="flex-shrink-0 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md border-2 hover:scale-110 transition-all duration-300 whitespace-nowrap"
+                       className="flex-shrink-0 px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 hover:scale-105 transition-all duration-300 whitespace-nowrap"
                       style={{ 
-                        background: 'rgba(236, 91, 40, 0.15)',
-                        borderColor: 'rgba(236, 91, 40, 0.4)',
-                        boxShadow: '0 8px 32px 0 rgba(236, 91, 40, 0.4), inset 0 0 20px rgba(236, 91, 40, 0.2)',
+                        background: 'rgba(255, 255, 255, 0.85)',
+                        borderColor: '#D45A2C',
+                        boxShadow: '0 4px 12px rgba(212, 90, 44, 0.15)',
                       }}
                     >
                       <span 
                         className="text-base sm:text-xl md:text-2xl font-semibold"
                         style={{ 
-                          color: 'hsl(14, 85%, 54%)',
-                          textShadow: '0 0 15px rgba(236, 91, 40, 0.8)',
+                          color: '#D45A2C',
                         }}
                       >
                         {provider}
@@ -106,8 +109,8 @@ const Insurance = () => {
               </div>
             </div>
 
-            <p className="text-center text-white mt-8 sm:mt-12 text-base sm:text-lg relative z-10 font-medium">
-              Don't see your insurance provider listed? <span className="text-secondary font-bold">Contact us</span> to verify your coverage.
+            <p className="text-center text-charcoal mt-8 sm:mt-12 text-base sm:text-lg relative z-10 font-medium">
+              Don't see your insurance provider listed? <span className="font-bold" style={{ color: '#278C8C' }}>Contact us</span> to verify your coverage.
             </p>
           </Card>
           </motion.div>
