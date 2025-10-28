@@ -25,6 +25,7 @@ export default {
         'medium-teal': "hsl(var(--medium-teal))",
         'light-teal': "hsl(var(--light-teal))",
         'very-light-teal': "hsl(var(--very-light-teal))",
+        'warm-cream': "hsl(var(--warm-cream))",
         'soft-seafoam': "hsl(var(--soft-seafoam))",
         'charcoal': "hsl(var(--charcoal))",
         'body-gray': "hsl(var(--body-gray))",

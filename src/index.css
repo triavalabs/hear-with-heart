@@ -9,74 +9,75 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Burnt Orange Family - Primary Brand Colors */
-    --burnt-orange: 14 66% 50%;
-    --terracotta: 14 74% 57%;
-    --apricot: 26 85% 76%;
+    --burnt-orange: 14 85% 54%;
+    --terracotta: 18 80% 60%;
+    --apricot: 20 80% 75%;
     
     /* Teal Family - Secondary Brand Colors */
-    --main-teal: 180 55% 35%;
-    --medium-teal: 180 52% 41%;
-    --light-teal: 177 53% 61%;
-    --very-light-teal: 174 50% 81%;
+    --main-teal: 174 55% 42%;
+    --medium-teal: 174 52% 50%;
+    --light-teal: 165 50% 75%;
+    --very-light-teal: 165 45% 85%;
     
     /* Background Colors */
-    --soft-seafoam: 162 33% 93%;
+    --warm-cream: 38 42% 91%;
+    --soft-seafoam: 165 35% 95%;
     --white: 0 0% 100%;
     
     /* Text Colors */
-    --charcoal: 0 0% 12%;
-    --body-gray: 0 0% 23%;
+    --charcoal: 200 20% 20%;
+    --body-gray: 200 10% 30%;
     
     /* UI Elements */
-    --border-gray: 162 14% 87%;
-    --focus-ring: 180 55% 35%;
+    --border-gray: 38 20% 85%;
+    --focus-ring: 174 55% 42%;
 
     /* Semantic Tokens */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 12%;
+    --background: 38 42% 91%;
+    --foreground: 200 20% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 12%;
+    --card-foreground: 200 20% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 12%;
+    --popover-foreground: 200 20% 20%;
 
-    --primary: 14 66% 50%;
+    --primary: 14 85% 54%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 180 55% 35%;
+    --secondary: 174 55% 42%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 162 33% 93%;
-    --muted-foreground: 0 0% 23%;
+    --muted: 38 42% 91%;
+    --muted-foreground: 200 10% 30%;
 
-    --accent: 180 52% 41%;
+    --accent: 174 55% 42%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 162 14% 87%;
-    --input: 162 14% 87%;
-    --ring: 180 55% 35%;
+    --border: 38 20% 85%;
+    --input: 38 20% 85%;
+    --ring: 174 55% 42%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 38 42% 91%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-foreground: 200 20% 20%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary: 14 85% 54%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent: 165 35% 95%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-accent-foreground: 200 20% 20%;
 
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: 38 20% 85%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 174 55% 42%;
   }
 
   .dark {
