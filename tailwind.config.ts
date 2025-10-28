@@ -79,7 +79,11 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      keyframes: {
+keyframes: {
+        float: {
+          '0%, 100%': { transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg) translateY(0px)' },
+          '50%': { transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg) translateY(-20px)' },
+        },
         "accordion-down": {
           from: {
             height: "0",
