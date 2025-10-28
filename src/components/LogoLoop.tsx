@@ -267,6 +267,12 @@ export const LogoLoop = memo<LogoLoopProps>(
 
       const itemAriaLabel = isNodeItem ? (item.ariaLabel ?? item.title) : (item.alt ?? item.title);
 
+      const wrappedContent = (
+        <div className="logoloop__item-container">
+          {content}
+        </div>
+      );
+
       const itemContent = item.href ? (
         <a
           className="logoloop__link"
@@ -275,10 +281,10 @@ export const LogoLoop = memo<LogoLoopProps>(
           target="_blank"
           rel="noreferrer noopener"
         >
-          {content}
+          {wrappedContent}
         </a>
       ) : (
-        content
+        wrappedContent
       );
 
       return (

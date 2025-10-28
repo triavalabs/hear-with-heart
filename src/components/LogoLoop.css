@@ -41,6 +41,24 @@
   margin-right: var(--logoloop-gap);
 }
 
+.logoloop__item-container {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  min-height: 100px;
+  transition: all 0.3s ease;
+}
+
+.logoloop__item:hover .logoloop__item-container {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .logoloop__node {
   display: inline-flex;
   align-items: center;
