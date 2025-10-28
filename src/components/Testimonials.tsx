@@ -121,7 +121,7 @@ const Testimonials = () => {
                 ))}
               </div>
               <span className="text-lg sm:text-xl font-bold text-charcoal">5.0</span>
-              <span className="text-sm sm:text-base text-body-gray">· 100+ reviews</span>
+              <span className="text-sm sm:text-base text-body-gray">· average reviews</span>
             </motion.div>
           </motion.div>
 
