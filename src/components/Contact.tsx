@@ -53,7 +53,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Info */}
             <div className="space-y-6 animate-fade-in-up">
-              <Card className="border-2 border-border-gray">
+              <Card className="border-2 border-border-gray bg-warm-cream">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-charcoal">
                     <MapPin className="w-6 h-6 text-main-teal" />
@@ -68,7 +68,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-border-gray">
+              <Card className="border-2 border-border-gray bg-warm-cream">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-charcoal">
                     <Phone className="w-6 h-6 text-main-teal" />
@@ -84,7 +84,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-border-gray">
+              <Card className="border-2 border-border-gray bg-warm-cream">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-charcoal">
                     <Mail className="w-6 h-6 text-main-teal" />
@@ -100,7 +100,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-border-gray">
+              <Card className="border-2 border-border-gray bg-warm-cream">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-charcoal">
                     <Clock className="w-6 h-6 text-main-teal" />
@@ -117,7 +117,7 @@ const Contact = () => {
               </Card>
 
               {/* Map Embed */}
-              <Card className="border-2 border-border-gray overflow-hidden">
+              <Card className="border-2 border-border-gray bg-warm-cream overflow-hidden">
                 <div className="h-64 bg-muted">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.123456789!2d-81.20873!3d28.66997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e76a3a75d9a7d9%3A0x6c3b7a5e1d2f8c4a!2s110%20Burnsed%20Pl%20Suite%201000%2C%20Oviedo%2C%20FL%2032765!5e0!3m2!1sen!2sus!4v1234567890"
@@ -134,7 +134,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="border-2 border-border-gray animate-fade-in-up">
+            <Card className="border-2 border-border-gray bg-warm-cream animate-fade-in-up">
               <CardHeader>
                 <CardTitle className="text-2xl text-charcoal">Send Us a Message</CardTitle>
                 <CardDescription className="text-lg">
