@@ -26,7 +26,7 @@ const Hero = () => {
           <Badge 
             className="mb-3 px-4 py-1.5 text-sm font-medium w-fit bg-secondary text-white shadow-lg"
           >
-            Focused on Hearing Health
+            → Focused on Hearing Health
           </Badge>
           <p className="text-lg md:text-xl font-semibold mb-4 tracking-wide" style={{ color: 'hsl(14, 85%, 54%)' }}>
             CARING & PROFESSIONAL
