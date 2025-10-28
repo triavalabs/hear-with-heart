@@ -1,12 +1,18 @@
 import { Card } from "@/components/ui/card";
+import bcbsLogo from "@/assets/insurance-bcbs.png";
+import uhcLogo from "@/assets/insurance-uhc.png";
+import aetnaLogo from "@/assets/insurance-aetna.png";
+import cignaLogo from "@/assets/insurance-cigna.png";
+import humanaLogo from "@/assets/insurance-humana.png";
+import medicareLogo from "@/assets/insurance-medicare.png";
 
 const insuranceProviders = [
-  "Blue Cross Blue Shield",
-  "UnitedHealthcare",
-  "Aetna",
-  "Cigna",
-  "Humana",
-  "Medicare",
+  { name: "Blue Cross Blue Shield", logo: bcbsLogo },
+  { name: "UnitedHealthcare", logo: uhcLogo },
+  { name: "Aetna", logo: aetnaLogo },
+  { name: "Cigna", logo: cignaLogo },
+  { name: "Humana", logo: humanaLogo },
+  { name: "Medicare", logo: medicareLogo },
 ];
 
 const Insurance = () => {
@@ -25,16 +31,18 @@ const Insurance = () => {
 
           <Card className="border-2 border-border-gray p-8 md:p-12 animate-fade-in-up overflow-hidden">
             <div className="relative">
-              <div className="flex gap-8 animate-scroll">
+              <div className="flex gap-12 animate-scroll items-center">
                 {[...insuranceProviders, ...insuranceProviders].map((provider, index) => (
                   <div 
                     key={index}
                     className="flex-shrink-0"
                   >
-                    <div className="w-40 h-24 flex items-center justify-center bg-soft-seafoam rounded-lg p-4 hover:shadow-md transition-all duration-300">
-                      <p className="text-sm font-semibold text-charcoal text-center">
-                        {provider}
-                      </p>
+                    <div className="w-48 h-28 flex items-center justify-center bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-border-gray">
+                      <img 
+                        src={provider.logo} 
+                        alt={`${provider.name} logo`}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                   </div>
                 ))}
