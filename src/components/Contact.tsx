@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { motion } from "framer-motion";
+import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerItem } from "@/lib/animationVariants";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -35,25 +37,46 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-charcoal">
-      <div className="container px-6">
+    <section id="contact" className="py-16 sm:py-20 bg-charcoal">
+      <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
-              → Let's Get Started
-            </Badge>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
+          <motion.div 
+            className="text-center mb-12 sm:mb-16"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerContainer}
+          >
+            <motion.div variants={fadeInUp}>
+              <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
+                → Let's Get Started
+              </Badge>
+            </motion.div>
+            <motion.h2 
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white"
+              variants={staggerItem}
+            >
               Schedule Your <span className="text-main-teal">Free Consultation</span>
-            </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+            </motion.h2>
+            <motion.p 
+              className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto"
+              variants={staggerItem}
+            >
               Take the first step toward better hearing. We're here to help.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
             {/* Contact Info */}
-            <div className="space-y-6 animate-fade-in-up">
-              <Card className="border-2 border-border-gray bg-warm-cream">
+            <motion.div 
+              className="space-y-4 sm:space-y-6"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={staggerContainer}
+            >
+              <motion.div variants={staggerItem}>
+                <Card className="border-2 border-border-gray bg-warm-cream">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-charcoal">
                     <MapPin className="w-6 h-6 text-main-teal" />
@@ -67,7 +90,9 @@ const Contact = () => {
                   </CardDescription>
                 </CardContent>
               </Card>
+              </motion.div>
 
+              <motion.div variants={staggerItem}>
               <Card className="border-2 border-border-gray bg-warm-cream">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-charcoal">
@@ -83,7 +108,9 @@ const Contact = () => {
                   </CardDescription>
                 </CardContent>
               </Card>
+              </motion.div>
 
+              <motion.div variants={staggerItem}>
               <Card className="border-2 border-border-gray bg-warm-cream">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-charcoal">
@@ -99,7 +126,9 @@ const Contact = () => {
                   </CardDescription>
                 </CardContent>
               </Card>
+              </motion.div>
 
+              <motion.div variants={staggerItem}>
               <Card className="border-2 border-border-gray bg-warm-cream">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-charcoal">
@@ -115,8 +144,10 @@ const Contact = () => {
                   </CardDescription>
                 </CardContent>
               </Card>
+              </motion.div>
 
               {/* Map Embed */}
+              <motion.div variants={staggerItem}>
               <Card className="border-2 border-border-gray bg-warm-cream overflow-hidden">
                 <div className="h-64 bg-muted">
                   <iframe
@@ -131,10 +162,17 @@ const Contact = () => {
                   />
                 </div>
               </Card>
-            </div>
+              </motion.div>
+            </motion.div>
 
             {/* Contact Form */}
-            <Card className="border-2 border-border-gray bg-warm-cream animate-fade-in-up">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeInRight}
+            >
+            <Card className="border-2 border-border-gray bg-warm-cream">
               <CardHeader>
                 <CardTitle className="text-2xl text-charcoal">Send Us a Message</CardTitle>
                 <CardDescription className="text-lg">
@@ -153,7 +191,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="text-lg py-6 border-2 border-border-gray focus:border-main-teal"
+                      className="text-lg py-6 border-2 border-border-gray focus:border-main-teal min-h-[44px]"
                       placeholder="John Smith"
                     />
                   </div>
@@ -169,7 +207,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="text-lg py-6 border-2 border-border-gray focus:border-main-teal"
+                      className="text-lg py-6 border-2 border-border-gray focus:border-main-teal min-h-[44px]"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -184,7 +222,7 @@ const Contact = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="text-lg py-6 border-2 border-border-gray focus:border-main-teal"
+                      className="text-lg py-6 border-2 border-border-gray focus:border-main-teal min-h-[44px]"
                       placeholder="(407) 555-0123"
                     />
                   </div>
@@ -207,13 +245,14 @@ const Contact = () => {
                   <Button 
                     type="submit"
                     size="lg"
-                    className="w-full text-lg py-6 bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+                    className="w-full text-lg py-6 bg-secondary hover:bg-secondary/90 text-secondary-foreground min-h-[44px]"
                   >
                     Send Message
                   </Button>
                 </form>
               </CardContent>
             </Card>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Star } from "lucide-react";
+import { motion } from "framer-motion";
+import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animationVariants";
 
 const testimonials = [
   {
@@ -99,26 +101,40 @@ const Testimonials = () => {
   const secondColumn = testimonials.slice(4);
 
   return (
-    <section id="testimonials" className="py-20 bg-soft-seafoam overflow-hidden">
-      <div className="container px-6">
+    <section id="testimonials" className="py-16 sm:py-20 bg-soft-seafoam overflow-hidden">
+      <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
-              → GOOGLE REVIEWS
-            </Badge>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-charcoal">
+          <motion.div 
+            className="text-center mb-12 sm:mb-16"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerContainer}
+          >
+            <motion.div variants={fadeInUp}>
+              <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
+                → GOOGLE REVIEWS
+              </Badge>
+            </motion.div>
+            <motion.h2 
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-charcoal"
+              variants={staggerItem}
+            >
               What Our <span className="text-main-teal">Patients Say</span>
-            </h2>
-            <div className="flex items-center justify-center gap-2 mb-4">
+            </motion.h2>
+            <motion.div 
+              className="flex items-center justify-center gap-2 mb-4"
+              variants={staggerItem}
+            >
               <div className="flex gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-burnt-orange text-burnt-orange" />
+                  <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-burnt-orange text-burnt-orange" />
                 ))}
               </div>
-              <span className="text-xl font-bold text-charcoal">5.0</span>
-              <span className="text-body-gray">· 100+ reviews</span>
-            </div>
-          </div>
+              <span className="text-lg sm:text-xl font-bold text-charcoal">5.0</span>
+              <span className="text-sm sm:text-base text-body-gray">· 100+ reviews</span>
+            </motion.div>
+          </motion.div>
 
           <div className="relative">
             {/* First column - scrolling up */}

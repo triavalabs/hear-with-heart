@@ -1,15 +1,23 @@
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import { motion } from "framer-motion";
+import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animationVariants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-soft-seafoam text-charcoal py-12">
-      <div className="container px-6">
+      <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12 mb-8">
+          <motion.div 
+            className="grid md:grid-cols-3 gap-8 sm:gap-12 mb-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={staggerContainer}
+          >
             {/* About */}
-            <div>
+            <motion.div variants={staggerItem}>
               <h3 className="text-2xl font-bold mb-4">Oviedo Hearing Center</h3>
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Providing exceptional hearing care to the Oviedo community since 2002.
@@ -34,10 +42,10 @@ const Footer = () => {
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>
-            </div>
+            </motion.div>
 
             {/* Quick Links */}
-            <div>
+            <motion.div variants={staggerItem}>
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
               <nav className="space-y-2">
                 <a href="#about" className="block text-charcoal/80 hover:text-main-teal transition-colors">
@@ -56,10 +64,10 @@ const Footer = () => {
                   Contact
                 </a>
               </nav>
-            </div>
+            </motion.div>
 
             {/* Contact Info */}
-            <div>
+            <motion.div variants={staggerItem}>
               <h3 className="text-xl font-bold mb-4">Contact Info</h3>
               <div className="space-y-3 text-charcoal/80">
                 <div className="flex items-start gap-3">
@@ -79,12 +87,18 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div className="border-t border-charcoal/10 pt-8 text-center text-charcoal/60">
+          <motion.div 
+            className="border-t border-charcoal/10 pt-8 text-center text-charcoal/60"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
             <p>© {currentYear} Oviedo Hearing Center. All rights reserved.</p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </footer>
