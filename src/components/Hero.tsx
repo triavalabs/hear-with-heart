@@ -109,7 +109,7 @@ const Hero = () => {
               <img 
                 src={hearingAid3D} 
                 alt="Premium Hearing Aid Device" 
-                className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-md object-contain"
+                className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-2xl object-contain"
                 style={{
                   mixBlendMode: 'multiply',
                 }}
