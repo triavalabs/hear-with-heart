@@ -62,7 +62,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-body-gray text-lg">
-                    123 Heritage Drive<br />
+                    110 Burnsed Pl Suite 1000<br />
                     Oviedo, FL 32765
                   </CardDescription>
                 </CardContent>
@@ -77,8 +77,8 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-body-gray text-lg">
-                    <a href="tel:+14073657555" className="hover:text-main-teal transition-colors">
-                      (407) 365-7555
+                    <a href="tel:+14073667766" className="hover:text-main-teal transition-colors">
+                      (407) 366-7766
                     </a>
                   </CardDescription>
                 </CardContent>
@@ -109,8 +109,8 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-body-gray text-lg">
-                    Monday - Friday: 9:00 AM - 5:00 PM<br />
-                    Saturday: By Appointment<br />
+                    Monday - Thursday: 9:00 AM - 3:00 PM<br />
+                    Friday - Saturday: Closed<br />
                     Sunday: Closed
                   </CardDescription>
                 </CardContent>
@@ -120,7 +120,7 @@ const Contact = () => {
               <Card className="border-2 border-border-gray overflow-hidden">
                 <div className="h-64 bg-muted">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.123456789!2d-81.20873!3d28.66997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQwJzEyLjAiTiA4McKwMTInMzEuNCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.123456789!2d-81.20873!3d28.66997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e76a3a75d9a7d9%3A0x6c3b7a5e1d2f8c4a!2s110%20Burnsed%20Pl%20Suite%201000%2C%20Oviedo%2C%20FL%2032765!5e0!3m2!1sen!2sus!4v1234567890"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

@@ -64,12 +64,12 @@ const Footer = () => {
               <div className="space-y-3 text-white/80">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-main-teal" />
-                  <span>123 Heritage Drive<br />Oviedo, FL 32765</span>
+                  <span>110 Burnsed Pl Suite 1000<br />Oviedo, FL 32765</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 flex-shrink-0 text-main-teal" />
-                  <a href="tel:+14073657555" className="hover:text-main-teal transition-colors">
-                    (407) 365-7555
+                  <a href="tel:+14073667766" className="hover:text-main-teal transition-colors">
+                    (407) 366-7766
                   </a>
                 </div>
                 <div className="flex items-center gap-3">

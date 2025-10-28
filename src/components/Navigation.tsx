@@ -36,9 +36,9 @@ const Navigation = () => {
               <MapPin className="h-4 w-4" />
               <span className="hidden sm:inline">Oviedo, FL</span>
             </a>
-            <a href="tel:+14073657555" className="flex items-center gap-1 hover:text-secondary transition-colors">
+            <a href="tel:+14073667766" className="flex items-center gap-1 hover:text-secondary transition-colors">
               <Phone className="h-4 w-4" />
-              <span>(407) 365-7555</span>
+              <span>(407) 366-7766</span>
             </a>
           </div>
           <div className="text-xs hidden md:block">
