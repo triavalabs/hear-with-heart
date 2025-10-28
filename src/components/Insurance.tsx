@@ -45,7 +45,7 @@ const Insurance = () => {
                 ariaLabel="Insurance partners"
               />
             </div>
-            <p className="text-center text-muted-foreground mt-8 text-lg">
+            <p className="text-center text-foreground/80 mt-8 text-lg">
               Don't see your insurance provider listed? Contact us to verify your coverage.
             </p>
           </Card>
