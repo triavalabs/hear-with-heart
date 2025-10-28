@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 bg-charcoal">
+    <section id="contact" className="py-16 sm:py-20 bg-soft-warm-neutral">
       <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 
@@ -53,13 +53,13 @@ const Contact = () => {
               </Badge>
             </motion.div>
             <motion.h2 
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
               variants={staggerItem}
             >
-              Schedule Your <span className="text-main-teal">Free Consultation</span>
+              <span className="text-burnt-orange">Schedule Your</span> <span className="text-main-teal">Free Consultation</span>
             </motion.h2>
             <motion.p 
-              className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto"
+              className="text-lg sm:text-xl text-dark-warm-gray max-w-2xl mx-auto"
               variants={staggerItem}
             >
               Take the first step toward better hearing. We're here to help.
@@ -76,15 +76,15 @@ const Contact = () => {
               variants={staggerContainer}
             >
               <motion.div variants={staggerItem}>
-                <Card className="border-2 border-border-gray bg-warm-cream">
+                <Card className="border-2 border-border-gray bg-white shadow-md">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-charcoal">
+                  <CardTitle className="flex items-center gap-3 text-burnt-orange">
                     <MapPin className="w-6 h-6 text-main-teal" />
                     Visit Us
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-body-gray text-lg">
+                  <CardDescription className="text-dark-warm-gray text-lg">
                     110 Burnsed Pl Suite 1000<br />
                     Oviedo, FL 32765
                   </CardDescription>
@@ -93,15 +93,15 @@ const Contact = () => {
               </motion.div>
 
               <motion.div variants={staggerItem}>
-              <Card className="border-2 border-border-gray bg-warm-cream">
+              <Card className="border-2 border-border-gray bg-white shadow-md">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-charcoal">
+                  <CardTitle className="flex items-center gap-3 text-burnt-orange">
                     <Phone className="w-6 h-6 text-main-teal" />
                     Call Us
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-body-gray text-lg">
+                  <CardDescription className="text-dark-warm-gray text-lg">
                     <a href="tel:+14073667766" className="hover:text-main-teal transition-colors">
                       (407) 366-7766
                     </a>
@@ -111,15 +111,15 @@ const Contact = () => {
               </motion.div>
 
               <motion.div variants={staggerItem}>
-              <Card className="border-2 border-border-gray bg-warm-cream">
+              <Card className="border-2 border-border-gray bg-white shadow-md">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-charcoal">
+                  <CardTitle className="flex items-center gap-3 text-burnt-orange">
                     <Mail className="w-6 h-6 text-main-teal" />
                     Email Us
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-body-gray text-lg">
+                  <CardDescription className="text-dark-warm-gray text-lg">
                     <a href="mailto:info@oviedohearing.com" className="hover:text-main-teal transition-colors">
                       info@oviedohearing.com
                     </a>
@@ -129,15 +129,15 @@ const Contact = () => {
               </motion.div>
 
               <motion.div variants={staggerItem}>
-              <Card className="border-2 border-border-gray bg-warm-cream">
+              <Card className="border-2 border-border-gray bg-white shadow-md">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-charcoal">
+                  <CardTitle className="flex items-center gap-3 text-burnt-orange">
                     <Clock className="w-6 h-6 text-main-teal" />
                     Office Hours
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-body-gray text-lg">
+                  <CardDescription className="text-dark-warm-gray text-lg">
                     Monday - Thursday: 9:00 AM - 3:00 PM<br />
                     Friday - Saturday: Closed<br />
                     Sunday: Closed
@@ -148,7 +148,7 @@ const Contact = () => {
 
               {/* Map Embed */}
               <motion.div variants={staggerItem}>
-              <Card className="border-2 border-border-gray bg-warm-cream overflow-hidden">
+              <Card className="border-2 border-border-gray bg-white shadow-md overflow-hidden">
                 <div className="h-64 bg-muted">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.123456789!2d-81.20873!3d28.66997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e76a3a75d9a7d9%3A0x6c3b7a5e1d2f8c4a!2s110%20Burnsed%20Pl%20Suite%201000%2C%20Oviedo%2C%20FL%2032765!5e0!3m2!1sen!2sus!4v1234567890"
@@ -172,17 +172,17 @@ const Contact = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInRight}
             >
-            <Card className="border-2 border-border-gray bg-warm-cream">
+            <Card className="border-2 border-border-gray bg-white shadow-md">
               <CardHeader>
-                <CardTitle className="text-2xl text-charcoal">Send Us a Message</CardTitle>
-                <CardDescription className="text-lg">
+                <CardTitle className="text-2xl text-burnt-orange">Send Us a Message</CardTitle>
+                <CardDescription className="text-lg text-dark-warm-gray">
                   Fill out the form below and we'll respond within 24 hours.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-charcoal text-base">
+                    <Label htmlFor="name" className="text-burnt-orange text-base font-semibold">
                       Full Name *
                     </Label>
                     <Input
@@ -197,7 +197,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-charcoal text-base">
+                    <Label htmlFor="email" className="text-burnt-orange text-base font-semibold">
                       Email Address *
                     </Label>
                     <Input
@@ -213,7 +213,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-charcoal text-base">
+                    <Label htmlFor="phone" className="text-burnt-orange text-base font-semibold">
                       Phone Number
                     </Label>
                     <Input
@@ -228,7 +228,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message" className="text-charcoal text-base">
+                    <Label htmlFor="message" className="text-burnt-orange text-base font-semibold">
                       Message *
                     </Label>
                     <Textarea

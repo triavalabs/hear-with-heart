@@ -6,7 +6,7 @@ import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerItem } from
 
 const About = () => {
   return (
-    <section id="about" className="py-16 sm:py-20 bg-soft-seafoam">
+    <section id="about" className="py-16 sm:py-20 bg-soft-warm-neutral">
       <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 
@@ -29,7 +29,7 @@ const About = () => {
               Your Hearing Care Partner Since 2002
             </motion.h2>
             <motion.p 
-              className="text-lg sm:text-xl text-body-gray max-w-2xl mx-auto"
+              className="text-lg sm:text-xl text-dark-warm-gray max-w-2xl mx-auto"
               variants={staggerItem}
             >
               Compassionate, experienced care from a team that knows you by name
@@ -44,16 +44,16 @@ const About = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInRight}
             >
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-charcoal mb-4 sm:mb-6">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-burnt-orange mb-4 sm:mb-6">
                 Cynthia Quinn, Licensed Hearing Aid Specialist
               </h3>
-              <p className="text-base sm:text-lg text-body-gray mb-4 leading-relaxed">
+              <p className="text-base sm:text-lg text-dark-warm-gray mb-4 leading-relaxed">
                 With over 20 years of experience serving the Oviedo community, Cynthia Quinn has built lasting relationships with patients who trust her expertise and genuine care.
               </p>
-              <p className="text-base sm:text-lg text-body-gray mb-4 leading-relaxed">
+              <p className="text-base sm:text-lg text-dark-warm-gray mb-4 leading-relaxed">
                 Cynthia specializes in comprehensive hearing evaluations, custom hearing aid fittings, and ongoing patient support. Her commitment to staying current with the latest hearing aid technology ensures you receive the best care available.
               </p>
-              <p className="text-base sm:text-lg text-body-gray leading-relaxed">
+              <p className="text-base sm:text-lg text-dark-warm-gray leading-relaxed">
                 At Oviedo Hearing Center, we believe hearing care is more than just technology—it's about understanding your unique lifestyle and helping you reconnect with the sounds that matter most.
               </p>
             </motion.div>
@@ -91,13 +91,13 @@ const About = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInRight}
             >
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-charcoal mb-4 sm:mb-6">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-burnt-orange mb-4 sm:mb-6">
                 A Welcoming Environment
               </h3>
-              <p className="text-base sm:text-lg text-body-gray mb-4 leading-relaxed">
+              <p className="text-base sm:text-lg text-dark-warm-gray mb-4 leading-relaxed">
                 Our office is designed with your comfort in mind. From the moment you walk through our doors, you'll experience a warm, professional atmosphere where you're treated like family.
               </p>
-              <p className="text-base sm:text-lg text-body-gray leading-relaxed">
+              <p className="text-base sm:text-lg text-dark-warm-gray leading-relaxed">
                 We take pride in creating a relaxed setting where you can discuss your hearing concerns openly and receive the personalized attention you deserve.
               </p>
             </motion.div>

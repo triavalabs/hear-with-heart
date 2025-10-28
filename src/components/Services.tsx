@@ -31,7 +31,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 sm:py-20 bg-background">
+    <section id="services" className="py-16 sm:py-20 bg-white">
       <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 
@@ -44,8 +44,8 @@ const Services = () => {
             <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
               → WHAT WE OFFER
             </Badge>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-charcoal">
-              Our <span className="text-main-teal">Services</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <span className="text-burnt-orange">Our</span> <span className="text-main-teal">Services</span>
             </h2>
           </motion.div>
 
@@ -71,7 +71,7 @@ const Services = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-burnt-orange mb-2">
                   {service.title}
                 </h3>
                 <p className="text-xl sm:text-2xl font-semibold text-main-teal">

@@ -16,10 +16,10 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden bg-warm-cream">
+    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden bg-white">
       {/* Background with subtle pattern */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-warm-cream" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white to-soft-warm-neutral" />
       </div>
 
       {/* Content */}
@@ -55,11 +55,11 @@ const Hero = () => {
             >
               <span style={{ color: 'hsl(14, 85%, 54%)' }}>TRUSTED<br />HEARING CARE</span>
               <br />
-              <span className="text-charcoal">IN OVIEDO<br />SINCE 2002</span>
+              <span className="text-main-teal">IN OVIEDO<br />SINCE 2002</span>
             </motion.h1>
             
             <motion.p 
-              className="text-lg sm:text-xl md:text-2xl text-charcoal mb-6 sm:mb-8 leading-relaxed"
+              className="text-lg sm:text-xl md:text-2xl text-dark-warm-gray mb-6 sm:mb-8 leading-relaxed"
               variants={staggerItem}
             >
               Experience personalized, professional hearing care from a team that treats you like family.

@@ -38,7 +38,7 @@ const Navigation = () => {
 
   return (
     <motion.nav 
-      className="sticky top-0 z-50 bg-warm-cream shadow-md"
+      className="sticky top-0 z-50 bg-white shadow-md"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.3 }}
@@ -81,14 +81,14 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-charcoal transition-colors font-medium ${
+                className={`text-dark-warm-gray transition-colors font-medium ${
                   location.pathname === link.path ? '' : ''
                 }`}
-                style={location.pathname === link.path ? { color: 'hsl(14, 85%, 54%)' } : undefined}
-                onMouseEnter={(e) => e.currentTarget.style.color = 'hsl(14, 85%, 54%)'}
+                style={location.pathname === link.path ? { color: 'hsl(174, 55%, 42%)' } : undefined}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'hsl(174, 55%, 42%)'}
                 onMouseLeave={(e) => {
                   if (location.pathname !== link.path) {
-                    e.currentTarget.style.color = 'hsl(200, 20%, 20%)';
+                    e.currentTarget.style.color = 'hsl(0, 0%, 23%)';
                   }
                 }}
               >
@@ -97,19 +97,7 @@ const Navigation = () => {
             ))}
             <Button
               onClick={handleScheduleClick}
-              className="font-semibold transition-all duration-300 hover:scale-105"
-              style={{
-                background: 'linear-gradient(135deg, hsl(14, 85%, 54%), hsl(18, 80%, 60%))',
-                color: 'white',
-                boxShadow: '0 4px 12px rgba(212, 90, 44, 0.25)',
-                border: 'none'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = '0 6px 16px rgba(212, 90, 44, 0.35)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 12px rgba(212, 90, 44, 0.25)';
-              }}
+              className="font-semibold transition-all duration-300 hover:scale-105 bg-secondary hover:bg-secondary/90 text-white"
             >
               Schedule Consultation
             </Button>
@@ -117,7 +105,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <motion.button
-            className="lg:hidden text-charcoal min-h-[44px] min-w-[44px] flex items-center justify-center"
+            className="lg:hidden text-dark-warm-gray min-h-[44px] min-w-[44px] flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             whileTap={{ scale: 0.95 }}
           >
@@ -145,8 +133,8 @@ const Navigation = () => {
                   <Link
                     to={link.path}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`block text-charcoal hover:text-secondary transition-colors font-medium py-3 min-h-[44px] ${
-                      location.pathname === link.path ? 'text-secondary' : ''
+                    className={`block text-dark-warm-gray hover:text-main-teal transition-colors font-medium py-3 min-h-[44px] ${
+                      location.pathname === link.path ? 'text-main-teal' : ''
                     }`}
                   >
                     {link.name}
@@ -160,13 +148,7 @@ const Navigation = () => {
               >
                 <Button
                   onClick={handleScheduleClick}
-                  className="w-full font-semibold transition-all duration-300 min-h-[44px]"
-                  style={{
-                    background: 'linear-gradient(135deg, hsl(14, 85%, 54%), hsl(18, 80%, 60%))',
-                    color: 'white',
-                    boxShadow: '0 4px 12px rgba(212, 90, 44, 0.25)',
-                    border: 'none'
-                  }}
+                  className="w-full font-semibold transition-all duration-300 min-h-[44px] bg-secondary hover:bg-secondary/90 text-white"
                 >
                   Schedule Consultation
                 </Button>

@@ -71,7 +71,7 @@ const ReviewCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) =>
         {testimonial.initials}
       </div>
       <div className="flex-1 min-w-0">
-        <h4 className="font-bold text-charcoal text-lg mb-1">{testimonial.name}</h4>
+        <h4 className="font-bold text-burnt-orange text-lg mb-1">{testimonial.name}</h4>
         <div className="flex gap-0.5 mb-2">
           {Array.from({ length: testimonial.rating }).map((_, i) => (
             <Star key={i} className="w-4 h-4 fill-burnt-orange text-burnt-orange" />
@@ -79,7 +79,7 @@ const ReviewCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) =>
         </div>
       </div>
     </div>
-    <p className="text-body-gray leading-relaxed">
+    <p className="text-dark-warm-gray leading-relaxed">
       {testimonial.text}
     </p>
   </div>
@@ -90,7 +90,7 @@ const Testimonials = () => {
   const secondColumn = testimonials.slice(4);
 
   return (
-    <section id="testimonials" className="py-16 sm:py-20 bg-soft-seafoam overflow-hidden">
+    <section id="testimonials" className="py-16 sm:py-20 bg-white overflow-hidden">
       <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 
@@ -106,10 +106,10 @@ const Testimonials = () => {
               </Badge>
             </motion.div>
             <motion.h2 
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-charcoal"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
               variants={staggerItem}
             >
-              What Our <span className="text-main-teal">Patients Say</span>
+              <span className="text-burnt-orange">What Our</span> <span className="text-main-teal">Patients Say</span>
             </motion.h2>
             <motion.div 
               className="flex items-center justify-center gap-2 mb-4"
@@ -120,8 +120,8 @@ const Testimonials = () => {
                   <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-burnt-orange text-burnt-orange" />
                 ))}
               </div>
-              <span className="text-lg sm:text-xl font-bold text-charcoal">5.0</span>
-              <span className="text-sm sm:text-base text-body-gray">· average reviews</span>
+              <span className="text-lg sm:text-xl font-bold text-burnt-orange">5.0</span>
+              <span className="text-sm sm:text-base text-dark-warm-gray">· average reviews</span>
             </motion.div>
           </motion.div>
 
