@@ -18,13 +18,13 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div className="order-2 md:order-1 animate-fade-in-up">
               <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-6">
-                Cynthia Smith, Au.D., CCC-A
+                Cynthia Quinn, Licensed Hearing Aid Specialist
               </h3>
               <p className="text-lg text-body-gray mb-4 leading-relaxed">
-                With over 20 years of experience serving the Oviedo community, Dr. Cynthia Smith has built lasting relationships with patients who trust her expertise and genuine care.
+                With over 20 years of experience serving the Oviedo community, Cynthia Quinn has built lasting relationships with patients who trust her expertise and genuine care.
               </p>
               <p className="text-lg text-body-gray mb-4 leading-relaxed">
-                Dr. Smith specializes in comprehensive hearing evaluations, custom hearing aid fittings, and ongoing patient support. Her commitment to staying current with the latest audiology advancements ensures you receive the best care available.
+                Cynthia specializes in comprehensive hearing evaluations, custom hearing aid fittings, and ongoing patient support. Her commitment to staying current with the latest hearing aid technology ensures you receive the best care available.
               </p>
               <p className="text-lg text-body-gray leading-relaxed">
                 At Oviedo Hearing Center, we believe hearing care is more than just technology—it's about understanding your unique lifestyle and helping you reconnect with the sounds that matter most.
@@ -33,7 +33,7 @@ const About = () => {
             <div className="order-1 md:order-2 animate-fade-in-up">
               <img 
                 src={teamPhoto} 
-                alt="Dr. Cynthia Smith, audiologist at Oviedo Hearing Center"
+                alt="Cynthia Quinn, Licensed Hearing Aid Specialist at Oviedo Hearing Center"
                 className="rounded-2xl shadow-2xl w-full"
               />
             </div>
