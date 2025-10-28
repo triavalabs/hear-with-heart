@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import LogoLoop from "./LogoLoop";
 import bcbsLogo from "@/assets/insurance-bcbs.png";
@@ -22,8 +23,11 @@ const Insurance = () => {
       <div className="container px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
-              Insurance Partners
+            <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
+              → We Accept Most Insurance
+            </Badge>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: 'hsl(14, 85%, 54%)' }}>
+              Making Quality Care Accessible
             </h2>
             <p className="text-xl text-body-gray max-w-2xl mx-auto">
               We work with most major insurance providers to make quality hearing care accessible
