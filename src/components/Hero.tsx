@@ -43,7 +43,7 @@ const Hero = () => {
             <Button 
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-6 border-2 border-white text-white hover:bg-white hover:text-charcoal transition-all duration-300"
+              className="text-lg px-8 py-6 border-2 border-white text-charcoal bg-white hover:text-main-teal transition-all duration-300"
               onClick={handleCallClick}
             >
               <Phone className="mr-2 h-5 w-5" />
