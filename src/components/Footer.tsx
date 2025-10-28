@@ -4,14 +4,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-charcoal text-white py-12">
+    <footer className="bg-soft-seafoam text-charcoal py-12">
       <div className="container px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12 mb-8">
             {/* About */}
             <div>
               <h3 className="text-2xl font-bold mb-4">Oviedo Hearing Center</h3>
-              <p className="text-white/80 leading-relaxed mb-4">
+              <p className="text-charcoal/80 leading-relaxed mb-4">
                 Providing exceptional hearing care to the Oviedo community since 2002.
               </p>
               <div className="flex gap-4">
@@ -19,7 +19,7 @@ const Footer = () => {
                   href="https://facebook.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-main-teal transition-colors duration-300"
+                  className="w-10 h-10 rounded-full bg-charcoal/10 flex items-center justify-center hover:bg-main-teal hover:text-white transition-colors duration-300"
                   aria-label="Visit our Facebook page"
                 >
                   <Facebook className="w-5 h-5" />
@@ -28,7 +28,7 @@ const Footer = () => {
                   href="https://instagram.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-main-teal transition-colors duration-300"
+                  className="w-10 h-10 rounded-full bg-charcoal/10 flex items-center justify-center hover:bg-main-teal hover:text-white transition-colors duration-300"
                   aria-label="Visit our Instagram page"
                 >
                   <Instagram className="w-5 h-5" />
@@ -40,19 +40,19 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
               <nav className="space-y-2">
-                <a href="#about" className="block text-white/80 hover:text-main-teal transition-colors">
+                <a href="#about" className="block text-charcoal/80 hover:text-main-teal transition-colors">
                   About Us
                 </a>
-                <a href="#services" className="block text-white/80 hover:text-main-teal transition-colors">
+                <a href="#services" className="block text-charcoal/80 hover:text-main-teal transition-colors">
                   Services
                 </a>
-                <a href="#testimonials" className="block text-white/80 hover:text-main-teal transition-colors">
+                <a href="#testimonials" className="block text-charcoal/80 hover:text-main-teal transition-colors">
                   Testimonials
                 </a>
-                <a href="#insurance" className="block text-white/80 hover:text-main-teal transition-colors">
+                <a href="#insurance" className="block text-charcoal/80 hover:text-main-teal transition-colors">
                   Insurance
                 </a>
-                <a href="#contact" className="block text-white/80 hover:text-main-teal transition-colors">
+                <a href="#contact" className="block text-charcoal/80 hover:text-main-teal transition-colors">
                   Contact
                 </a>
               </nav>
@@ -61,7 +61,7 @@ const Footer = () => {
             {/* Contact Info */}
             <div>
               <h3 className="text-xl font-bold mb-4">Contact Info</h3>
-              <div className="space-y-3 text-white/80">
+              <div className="space-y-3 text-charcoal/80">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-main-teal" />
                   <span>110 Burnsed Pl Suite 1000<br />Oviedo, FL 32765</span>
@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-white/10 pt-8 text-center text-white/60">
+          <div className="border-t border-charcoal/10 pt-8 text-center text-charcoal/60">
             <p>© {currentYear} Oviedo Hearing Center. All rights reserved.</p>
           </div>
         </div>
