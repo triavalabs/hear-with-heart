@@ -90,7 +90,9 @@ const Testimonials = () => {
   const secondColumn = testimonials.slice(4);
 
   return (
-    <section id="testimonials" className="py-16 sm:py-20 bg-white overflow-hidden">
+    <section id="testimonials" className="py-16 sm:py-20 overflow-hidden" style={{
+      background: 'linear-gradient(180deg, hsl(165, 35%, 95%) 0%, hsl(174, 40%, 92%) 100%)'
+    }}>
       <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 

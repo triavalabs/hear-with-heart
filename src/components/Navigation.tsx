@@ -44,20 +44,20 @@ const Navigation = () => {
       transition={{ duration: 0.3 }}
     >
       {/* Top Bar */}
-      <div className="bg-charcoal text-white py-2">
-        <div className="container mx-auto px-6 flex justify-between items-center text-sm">
+      <div className="py-2" style={{ background: 'linear-gradient(135deg, hsl(174, 55%, 42%), hsl(174, 52%, 50%))' }}>
+        <div className="container mx-auto px-6 flex justify-between items-center text-sm text-white">
           <div className="flex items-center gap-4">
-            <a href="https://maps.google.com/?q=Oviedo,+FL" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-secondary transition-colors">
+            <a href="https://maps.google.com/?q=Oviedo,+FL" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-burnt-orange transition-colors">
               <MapPin className="h-4 w-4" />
               <span className="hidden sm:inline">Oviedo, FL</span>
             </a>
-            <a href="tel:+14073667766" className="flex items-center gap-1 hover:text-secondary transition-colors">
+            <a href="tel:+14073667766" className="flex items-center gap-1 hover:text-burnt-orange transition-colors">
               <Phone className="h-4 w-4" />
               <span>(407) 366-7766</span>
             </a>
           </div>
           <div className="text-xs hidden md:block">
-            Latest News
+            Serving Oviedo Since 2002
           </div>
         </div>
       </div>

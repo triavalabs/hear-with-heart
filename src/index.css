@@ -41,6 +41,9 @@ All colors MUST be HSL.
     --soft-warm-neutral: 38 42% 98%;
     --warm-cream: 38 42% 91%;
     --soft-seafoam: 165 35% 95%;
+    --light-peach: 20 80% 95%;
+    --light-teal-bg: 174 40% 92%;
+    --very-light-orange: 14 70% 96%;
     
     /* Text Colors */
     --dark-warm-gray: 0 0% 23%;

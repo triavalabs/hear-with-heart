@@ -16,10 +16,12 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden bg-white">
+    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
       {/* Background with subtle pattern */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-white to-soft-warm-neutral" />
+        <div className="absolute inset-0" style={{ 
+          background: 'linear-gradient(135deg, hsl(14, 70%, 96%) 0%, hsl(20, 80%, 95%) 50%, hsl(165, 35%, 95%) 100%)' 
+        }} />
       </div>
 
       {/* Content */}

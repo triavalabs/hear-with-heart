@@ -6,7 +6,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-soft-warm-neutral text-dark-warm-gray py-12">
+    <footer className="text-dark-warm-gray py-12" style={{
+      background: 'linear-gradient(180deg, hsl(174, 40%, 92%) 0%, hsl(174, 55%, 42%) 100%)'
+    }}>
       <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 
@@ -18,8 +20,8 @@ const Footer = () => {
           >
             {/* About */}
             <motion.div variants={staggerItem}>
-              <h3 className="text-2xl font-bold mb-4 text-burnt-orange">Oviedo Hearing Center</h3>
-              <p className="text-dark-warm-gray leading-relaxed mb-4">
+              <h3 className="text-2xl font-bold mb-4 text-white">Oviedo Hearing Center</h3>
+              <p className="text-white/90 leading-relaxed mb-4">
                 Providing exceptional hearing care to the Oviedo community since 2002.
               </p>
               <div className="flex gap-4">
@@ -27,7 +29,7 @@ const Footer = () => {
                   href="https://facebook.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-main-teal/10 flex items-center justify-center hover:bg-main-teal hover:text-white transition-colors duration-300"
+                  className="w-10 h-10 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white hover:text-main-teal transition-colors duration-300"
                   aria-label="Visit our Facebook page"
                 >
                   <Facebook className="w-5 h-5" />
@@ -36,7 +38,7 @@ const Footer = () => {
                   href="https://instagram.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-main-teal/10 flex items-center justify-center hover:bg-main-teal hover:text-white transition-colors duration-300"
+                  className="w-10 h-10 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white hover:text-main-teal transition-colors duration-300"
                   aria-label="Visit our Instagram page"
                 >
                   <Instagram className="w-5 h-5" />
@@ -46,21 +48,21 @@ const Footer = () => {
 
             {/* Quick Links */}
             <motion.div variants={staggerItem}>
-              <h3 className="text-xl font-bold mb-4 text-main-teal">Quick Links</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">Quick Links</h3>
               <nav className="space-y-2">
-                <a href="#about" className="block text-dark-warm-gray hover:text-main-teal transition-colors">
+                <a href="#about" className="block text-white/90 hover:text-white transition-colors">
                   About Us
                 </a>
-                <a href="#services" className="block text-dark-warm-gray hover:text-main-teal transition-colors">
+                <a href="#services" className="block text-white/90 hover:text-white transition-colors">
                   Services
                 </a>
-                <a href="#testimonials" className="block text-dark-warm-gray hover:text-main-teal transition-colors">
+                <a href="#testimonials" className="block text-white/90 hover:text-white transition-colors">
                   Testimonials
                 </a>
-                <a href="#insurance" className="block text-dark-warm-gray hover:text-main-teal transition-colors">
+                <a href="#insurance" className="block text-white/90 hover:text-white transition-colors">
                   Insurance
                 </a>
-                <a href="#contact" className="block text-dark-warm-gray hover:text-main-teal transition-colors">
+                <a href="#contact" className="block text-white/90 hover:text-white transition-colors">
                   Contact
                 </a>
               </nav>
@@ -68,21 +70,21 @@ const Footer = () => {
 
             {/* Contact Info */}
             <motion.div variants={staggerItem}>
-              <h3 className="text-xl font-bold mb-4 text-main-teal">Contact Info</h3>
-              <div className="space-y-3 text-dark-warm-gray">
+              <h3 className="text-xl font-bold mb-4 text-white">Contact Info</h3>
+              <div className="space-y-3 text-white/90">
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-main-teal" />
+                  <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-white" />
                   <span>110 Burnsed Pl Suite 1000<br />Oviedo, FL 32765</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 flex-shrink-0 text-main-teal" />
-                  <a href="tel:+14073667766" className="hover:text-main-teal transition-colors">
+                  <Phone className="w-5 h-5 flex-shrink-0 text-white" />
+                  <a href="tel:+14073667766" className="hover:text-white transition-colors">
                     (407) 366-7766
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 flex-shrink-0 text-main-teal" />
-                  <a href="mailto:info@oviedohearing.com" className="hover:text-main-teal transition-colors">
+                  <Mail className="w-5 h-5 flex-shrink-0 text-white" />
+                  <a href="mailto:info@oviedohearing.com" className="hover:text-white transition-colors">
                     info@oviedohearing.com
                   </a>
                 </div>
@@ -91,7 +93,7 @@ const Footer = () => {
           </motion.div>
 
           <motion.div 
-            className="border-t border-border-gray pt-8 text-center text-dark-warm-gray/60"
+            className="border-t border-white/20 pt-8 text-center text-white/80"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}

@@ -6,7 +6,9 @@ import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerItem } from
 
 const About = () => {
   return (
-    <section id="about" className="py-16 sm:py-20 bg-soft-warm-neutral">
+    <section id="about" className="py-16 sm:py-20" style={{ 
+      background: 'linear-gradient(180deg, hsl(174, 40%, 92%) 0%, hsl(165, 35%, 95%) 100%)' 
+    }}>
       <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 

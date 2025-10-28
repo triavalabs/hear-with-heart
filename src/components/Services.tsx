@@ -31,7 +31,9 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 sm:py-20 bg-white">
+    <section id="services" className="py-16 sm:py-20" style={{
+      background: 'linear-gradient(135deg, hsl(38, 42%, 98%) 0%, hsl(20, 80%, 95%) 100%)'
+    }}>
       <div className="container px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 
