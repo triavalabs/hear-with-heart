@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import LogoLoop from "./LogoLoop";
 import bcbsLogo from "@/assets/insurance-bcbs.png";
 import uhcLogo from "@/assets/insurance-uhc.png";
 import aetnaLogo from "@/assets/insurance-aetna.png";
@@ -7,12 +8,12 @@ import humanaLogo from "@/assets/insurance-humana.png";
 import medicareLogo from "@/assets/insurance-medicare.png";
 
 const insuranceProviders = [
-  { name: "Blue Cross Blue Shield", logo: bcbsLogo },
-  { name: "UnitedHealthcare", logo: uhcLogo },
-  { name: "Aetna", logo: aetnaLogo },
-  { name: "Cigna", logo: cignaLogo },
-  { name: "Humana", logo: humanaLogo },
-  { name: "Medicare", logo: medicareLogo },
+  { src: bcbsLogo, alt: "Blue Cross Blue Shield" },
+  { src: uhcLogo, alt: "UnitedHealthcare" },
+  { src: aetnaLogo, alt: "Aetna" },
+  { src: cignaLogo, alt: "Cigna" },
+  { src: humanaLogo, alt: "Humana" },
+  { src: medicareLogo, alt: "Medicare" },
 ];
 
 const Insurance = () => {
@@ -30,23 +31,19 @@ const Insurance = () => {
           </div>
 
           <Card className="border-2 border-border-gray p-8 md:p-12 animate-fade-in-up overflow-hidden">
-            <div className="relative">
-              <div className="flex gap-12 animate-scroll items-center">
-                {[...insuranceProviders, ...insuranceProviders].map((provider, index) => (
-                  <div 
-                    key={index}
-                    className="flex-shrink-0"
-                  >
-                    <div className="w-48 h-28 flex items-center justify-center bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-border-gray">
-                      <img 
-                        src={provider.logo} 
-                        alt={`${provider.name} logo`}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="relative" style={{ height: '150px' }}>
+              <LogoLoop
+                logos={insuranceProviders}
+                speed={60}
+                direction="left"
+                logoHeight={80}
+                gap={48}
+                pauseOnHover={true}
+                scaleOnHover={true}
+                fadeOut={true}
+                fadeOutColor="hsl(var(--background))"
+                ariaLabel="Insurance partners"
+              />
             </div>
             <p className="text-center text-body-gray mt-8 text-lg">
               Don't see your insurance provider listed? Contact us to verify your coverage.
