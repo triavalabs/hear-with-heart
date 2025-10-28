@@ -97,7 +97,19 @@ const Navigation = () => {
             ))}
             <Button
               onClick={handleScheduleClick}
-              className="bg-secondary hover:bg-secondary/90 text-white"
+              className="font-semibold transition-all duration-300 hover:scale-105"
+              style={{
+                background: 'linear-gradient(135deg, hsl(14, 85%, 54%), hsl(18, 80%, 60%))',
+                color: 'white',
+                boxShadow: '0 4px 12px rgba(212, 90, 44, 0.25)',
+                border: 'none'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = '0 6px 16px rgba(212, 90, 44, 0.35)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(212, 90, 44, 0.25)';
+              }}
             >
               Schedule Consultation
             </Button>
@@ -148,7 +160,13 @@ const Navigation = () => {
               >
                 <Button
                   onClick={handleScheduleClick}
-                  className="w-full bg-secondary hover:bg-secondary/90 text-white min-h-[44px]"
+                  className="w-full font-semibold transition-all duration-300 min-h-[44px]"
+                  style={{
+                    background: 'linear-gradient(135deg, hsl(14, 85%, 54%), hsl(18, 80%, 60%))',
+                    color: 'white',
+                    boxShadow: '0 4px 12px rgba(212, 90, 44, 0.25)',
+                    border: 'none'
+                  }}
                 >
                   Schedule Consultation
                 </Button>
