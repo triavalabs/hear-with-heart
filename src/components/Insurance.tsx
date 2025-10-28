@@ -30,7 +30,7 @@ const Insurance = () => {
             </p>
           </div>
 
-          <Card className="border-2 border-border-gray p-8 md:p-12 animate-fade-in-up overflow-hidden">
+          <Card className="border-2 border-muted bg-charcoal p-8 md:p-12 animate-fade-in-up overflow-hidden">
             <div className="relative" style={{ height: '150px' }}>
               <LogoLoop
                 logos={insuranceProviders}
@@ -41,11 +41,11 @@ const Insurance = () => {
                 pauseOnHover={true}
                 scaleOnHover={true}
                 fadeOut={true}
-                fadeOutColor="hsl(var(--background))"
+                fadeOutColor="hsl(var(--charcoal))"
                 ariaLabel="Insurance partners"
               />
             </div>
-            <p className="text-center text-body-gray mt-8 text-lg">
+            <p className="text-center text-muted-foreground mt-8 text-lg">
               Don't see your insurance provider listed? Contact us to verify your coverage.
             </p>
           </Card>
