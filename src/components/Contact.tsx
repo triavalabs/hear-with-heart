@@ -35,15 +35,15 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-soft-seafoam">
+    <section id="contact" className="py-20 bg-background">
       <div className="container px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
-            <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
+            <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-main-teal text-white shadow-lg">
               → Let's Get Started
             </Badge>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: 'hsl(14, 85%, 54%)' }}>
-              Schedule Your Free Consultation
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-charcoal">
+              Schedule Your <span className="text-main-teal">Free Consultation</span>
             </h2>
             <p className="text-xl text-body-gray max-w-2xl mx-auto">
               Take the first step toward better hearing. We're here to help.
