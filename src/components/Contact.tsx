@@ -35,17 +35,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-charcoal">
       <div className="container px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
-            <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-main-teal text-white shadow-lg">
+            <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
               → Let's Get Started
             </Badge>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-charcoal">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
               Schedule Your <span className="text-main-teal">Free Consultation</span>
             </h2>
-            <p className="text-xl text-body-gray max-w-2xl mx-auto">
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Take the first step toward better hearing. We're here to help.
             </p>
           </div>
