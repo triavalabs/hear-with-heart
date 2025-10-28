@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Phone } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 
@@ -22,6 +23,17 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 px-6 py-20 md:py-28">
         <div className="max-w-2xl animate-fade-in-up">
+          <Badge 
+            variant="outline" 
+            className="mb-3 px-4 py-1.5 text-sm font-medium border-2 w-fit"
+            style={{ 
+              borderColor: 'hsl(14, 85%, 54%)', 
+              color: 'hsl(14, 85%, 54%)',
+              backgroundColor: 'transparent'
+            }}
+          >
+            Focused on Hearing Health
+          </Badge>
           <p className="text-lg md:text-xl font-semibold mb-4 tracking-wide" style={{ color: 'hsl(14, 85%, 54%)' }}>
             CARING & PROFESSIONAL
           </p>
