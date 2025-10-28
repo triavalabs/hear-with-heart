@@ -50,19 +50,22 @@ const Footer = () => {
             <motion.div variants={staggerItem}>
               <h3 className="text-xl font-bold mb-4 text-white">Quick Links</h3>
               <nav className="space-y-2">
-                <a href="#about" className="block text-white font-medium hover:text-burnt-orange transition-colors">
+                <a href="/" className="block text-white font-medium hover:text-burnt-orange transition-colors">
+                  Home
+                </a>
+                <a href="/about" className="block text-white font-medium hover:text-burnt-orange transition-colors">
                   About Us
                 </a>
-                <a href="#services" className="block text-white font-medium hover:text-burnt-orange transition-colors">
-                  Services
+                <a href="/services" className="block text-white font-medium hover:text-burnt-orange transition-colors">
+                  Our Services
                 </a>
-                <a href="#testimonials" className="block text-white font-medium hover:text-burnt-orange transition-colors">
+                <a href="/resources" className="block text-white font-medium hover:text-burnt-orange transition-colors">
+                  Patient Resources
+                </a>
+                <a href="/testimonials" className="block text-white font-medium hover:text-burnt-orange transition-colors">
                   Testimonials
                 </a>
-                <a href="#insurance" className="block text-white font-medium hover:text-burnt-orange transition-colors">
-                  Insurance
-                </a>
-                <a href="#contact" className="block text-white font-medium hover:text-burnt-orange transition-colors">
+                <a href="/contact" className="block text-white font-medium hover:text-burnt-orange transition-colors">
                   Contact
                 </a>
               </nav>
