@@ -1,4 +1,4 @@
-import teamPhoto from "@/assets/team-photo.jpg";
+import teamPhoto from "@/assets/team-photo-enhanced.png";
 import officeInterior from "@/assets/office-interior.jpg";
 
 const About = () => {
