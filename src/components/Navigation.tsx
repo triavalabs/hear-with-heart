@@ -27,7 +27,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-warm-cream shadow-md">
       {/* Top Bar */}
       <div className="bg-charcoal text-white py-2">
         <div className="container mx-auto px-6 flex justify-between items-center text-sm">
@@ -53,8 +53,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <div className="text-2xl font-bold">
-              <span className="text-charcoal">Oviedo</span>{" "}
-              <span className="text-secondary">Hearing Center</span>
+              <span style={{ color: 'hsl(14, 85%, 54%)' }}>Oviedo Hearing Center Inc.</span>
             </div>
           </Link>
 
@@ -64,9 +63,16 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-charcoal hover:text-secondary transition-colors font-medium ${
-                  location.pathname === link.path ? 'text-secondary' : ''
+                className={`text-charcoal transition-colors font-medium ${
+                  location.pathname === link.path ? '' : ''
                 }`}
+                style={location.pathname === link.path ? { color: 'hsl(14, 85%, 54%)' } : undefined}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'hsl(14, 85%, 54%)'}
+                onMouseLeave={(e) => {
+                  if (location.pathname !== link.path) {
+                    e.currentTarget.style.color = 'hsl(200, 20%, 20%)';
+                  }
+                }}
               >
                 {link.name}
               </Link>
