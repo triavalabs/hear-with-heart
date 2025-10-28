@@ -23,21 +23,22 @@ const Insurance = () => {
             </p>
           </div>
 
-          <Card className="border-2 border-border-gray p-8 md:p-12 animate-fade-in-up">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 items-center justify-items-center">
-              {insuranceProviders.map((provider, index) => (
-                <div 
-                  key={index}
-                  className="text-center animate-fade-in-up"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <div className="w-32 h-20 flex items-center justify-center bg-soft-seafoam rounded-lg p-4 hover:shadow-md transition-all duration-300">
-                    <p className="text-sm font-semibold text-charcoal">
-                      {provider}
-                    </p>
+          <Card className="border-2 border-border-gray p-8 md:p-12 animate-fade-in-up overflow-hidden">
+            <div className="relative">
+              <div className="flex gap-8 animate-scroll">
+                {[...insuranceProviders, ...insuranceProviders].map((provider, index) => (
+                  <div 
+                    key={index}
+                    className="flex-shrink-0"
+                  >
+                    <div className="w-40 h-24 flex items-center justify-center bg-soft-seafoam rounded-lg p-4 hover:shadow-md transition-all duration-300">
+                      <p className="text-sm font-semibold text-charcoal text-center">
+                        {provider}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
             <p className="text-center text-body-gray mt-8 text-lg">
               Don't see your insurance provider listed? Contact us to verify your coverage.
