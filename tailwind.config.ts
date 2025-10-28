@@ -13,7 +13,22 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'lato': ['Lato', 'sans-serif'],
+      },
       colors: {
+        'burnt-orange': "hsl(var(--burnt-orange))",
+        'terracotta': "hsl(var(--terracotta))",
+        'apricot': "hsl(var(--apricot))",
+        'main-teal': "hsl(var(--main-teal))",
+        'medium-teal': "hsl(var(--medium-teal))",
+        'light-teal': "hsl(var(--light-teal))",
+        'very-light-teal': "hsl(var(--very-light-teal))",
+        'soft-seafoam': "hsl(var(--soft-seafoam))",
+        'charcoal': "hsl(var(--charcoal))",
+        'body-gray': "hsl(var(--body-gray))",
+        'border-gray': "hsl(var(--border-gray))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -80,10 +95,31 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "fade-in-up": {
+          "0%": { 
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          "100%": { 
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.6s ease-out",
+        "fade-in-up": "fade-in-up 0.6s ease-out",
+        "float": "float 6s ease-in-out infinite",
       },
     },
   },
