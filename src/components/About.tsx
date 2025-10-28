@@ -1,5 +1,5 @@
 import teamPhoto from "@/assets/team-photo-transparent.png";
-import officeInterior from "@/assets/office-interior.jpg";
+import officeInterior from "@/assets/office-photo-upscaled.jpg";
 
 const About = () => {
   return (
