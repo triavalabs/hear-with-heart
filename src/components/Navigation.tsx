@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Menu, X } from "lucide-react";
+import hearingAidImage from "@/assets/hearing-aid-hero.png";
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,7 +52,12 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center gap-4">
+            <img 
+              src={hearingAidImage} 
+              alt="Premium hearing aid device" 
+              className="h-16 w-16 object-contain"
+            />
             <div className="text-2xl font-bold">
               <span style={{ color: 'hsl(14, 85%, 54%)' }}>Oviedo Hearing Center Inc.</span>
             </div>
