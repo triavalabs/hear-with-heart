@@ -50,17 +50,7 @@ const Contact = () => {
             variants={staggerContainer}
           >
             <motion.div variants={fadeInUp}>
-              <Badge 
-                className="mb-4 px-4 py-1.5 text-sm font-bold shadow-lg border-0"
-                style={{
-                  background: 'linear-gradient(135deg, hsl(174, 55%, 42%), hsl(174, 52%, 50%))',
-                  backgroundClip: 'text',
-                  WebkitBackgroundClip: 'text',
-                  color: 'transparent',
-                  textShadow: '0 0 20px rgba(39, 140, 140, 0.3)',
-                  WebkitTextStroke: '0.5px hsl(174, 55%, 42%)'
-                }}
-              >
+              <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
                 → Let's Get Started
               </Badge>
             </motion.div>
