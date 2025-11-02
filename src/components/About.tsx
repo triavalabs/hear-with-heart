@@ -66,7 +66,7 @@ const About = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInLeft}
               style={{ 
-                boxShadow: '0 0 60px 20px rgba(77, 182, 172, 0.4), 0 20px 50px rgba(0, 0, 0, 0.3)'
+                boxShadow: '0 0 50px 15px rgba(77, 182, 172, 0.7), 0 0 100px 40px rgba(77, 182, 172, 0.5), 0 0 150px 60px rgba(77, 182, 172, 0.3), 0 20px 50px rgba(0, 0, 0, 0.25)'
               }}
             >
               <img 
