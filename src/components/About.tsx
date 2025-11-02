@@ -60,16 +60,19 @@ const About = () => {
               </p>
             </motion.div>
             <motion.div 
-              className="order-1 md:order-2"
+              className="order-1 md:order-2 rounded-2xl"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInLeft}
+              style={{ 
+                boxShadow: '0 0 60px 20px rgba(77, 182, 172, 0.4), 0 20px 50px rgba(0, 0, 0, 0.3)'
+              }}
             >
               <img 
                 src={teamPhoto} 
                 alt="Cynthia Quinn, Licensed Hearing Aid Specialist at Oviedo Hearing Center"
-                className="rounded-2xl shadow-2xl w-full"
+                className="rounded-2xl w-full"
               />
             </motion.div>
           </div>
