@@ -20,7 +20,7 @@ const Hero = () => {
       {/* Background with subtle pattern */}
       <div className="absolute inset-0">
         <div className="absolute inset-0" style={{ 
-          background: 'linear-gradient(135deg, hsl(14, 70%, 96%) 0%, hsl(20, 80%, 95%) 50%, hsl(165, 35%, 95%) 100%)' 
+          background: 'linear-gradient(135deg, hsl(14, 60%, 98%) 0%, hsl(20, 75%, 96%) 50%, hsl(165, 35%, 95%) 100%)' 
         }} />
       </div>
 
@@ -93,7 +93,7 @@ const Hero = () => {
 
           {/* 3D Hearing Aid Image - Now visible on mobile */}
           <motion.div 
-            className="flex justify-center items-center mt-8 md:mt-0"
+            className="flex justify-center items-center mt-8 md:mt-0 px-4"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
@@ -108,13 +108,19 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
+              {/* Pedestal Shadow */}
+              <div 
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[70%] h-8 pointer-events-none"
+                style={{
+                  background: 'radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.08) 40%, transparent 70%)',
+                  filter: 'blur(8px)',
+                  zIndex: -1,
+                }}
+              />
               <img 
                 src={hearingAid3D} 
-                alt="Premium Hearing Aid Device" 
-                className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-2xl object-contain"
-                style={{
-                  mixBlendMode: 'multiply',
-                }}
+                alt="Starkey Edge AI rechargeable hearing aids on teal pedestal with splash design" 
+                className="w-full max-w-[220px] sm:max-w-[300px] md:max-w-2xl object-contain"
               />
             </motion.div>
           </motion.div>
