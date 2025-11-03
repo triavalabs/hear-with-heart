@@ -121,7 +121,7 @@ const Hero = () => {
               <img 
                 src={hearingAid3D} 
                 alt="Starkey Edge AI rechargeable hearing aids on teal pedestal with splash design" 
-                className="w-full max-w-[350px] sm:max-w-[400px] md:max-w-2xl object-contain"
+                className="w-full max-w-[90%] sm:max-w-[450px] md:max-w-2xl object-contain"
               />
             </motion.div>
           </motion.div>
