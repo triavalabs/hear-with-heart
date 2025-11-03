@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
+    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center">
       {/* Background with subtle pattern */}
       <div className="absolute inset-0">
         <div className="absolute inset-0" style={{ 
@@ -93,7 +93,7 @@ const Hero = () => {
 
           {/* 3D Hearing Aid Image - Now visible on mobile */}
           <motion.div 
-            className="flex justify-center items-center mt-8 md:mt-0 px-4"
+            className="flex justify-center items-center mt-8 md:mt-0 px-4 pb-8 md:pb-12"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
