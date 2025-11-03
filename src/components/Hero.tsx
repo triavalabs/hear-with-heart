@@ -146,7 +146,7 @@ const Hero = () => {
             >
               {/* Starkey Logo - Centered Above Product */}
               <motion.div
-                className="absolute top-8 md:top-12 lg:top-16 left-1/2 -translate-x-1/2 z-30"
+                className="absolute top-16 md:top-12 lg:top-16 left-1/2 -translate-x-1/2 z-30"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
