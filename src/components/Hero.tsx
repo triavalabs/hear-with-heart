@@ -126,7 +126,7 @@ const Hero = () => {
           >
             {/* Starkey Logo */}
             <motion.div
-              className="mb-6 md:mb-8"
+              className="mb-4 md:mb-6"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -135,7 +135,8 @@ const Hero = () => {
               <img 
                 src={starkeyLogo} 
                 alt="Starkey Hearing Technologies" 
-                className="h-8 md:h-12 w-auto"
+                className="h-12 md:h-16 lg:h-20 w-auto"
+                style={{ filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))' }}
               />
             </motion.div>
 
