@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Phone } from "lucide-react";
-import hearingAid3D from "@/assets/starkey-omega-hero.png";
+import hearingAid3D from "@/assets/starkey-exploded-view.png";
+import starkeyLogo from "@/assets/starkey-logo.png";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInRight, scaleIn, staggerContainer, staggerItem } from "@/lib/animationVariants";
 
@@ -16,12 +17,26 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center">
-      {/* Dynamic gradient background with geometric accents */}
+    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
+      {/* Wave-based background design */}
       <div className="absolute inset-0 overflow-hidden">
+        {/* Base gradient */}
         <div className="absolute inset-0" style={{ 
           background: 'linear-gradient(135deg, hsl(165, 75%, 96%) 0%, hsl(14, 65%, 97%) 40%, hsl(20, 80%, 95%) 100%)' 
         }} />
+        
+        {/* Wave SVG layers */}
+        <svg className="absolute bottom-0 left-0 w-full h-[60%] opacity-[0.15]" viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,400 C320,500 640,300 960,400 C1280,500 1440,400 1440,400 L1440,800 L0,800 Z" fill="hsl(165, 70%, 45%)" />
+        </svg>
+        
+        <svg className="absolute bottom-0 left-0 w-full h-[50%] opacity-[0.12]" viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,500 C360,400 720,600 1080,500 C1320,440 1440,500 1440,500 L1440,800 L0,800 Z" fill="hsl(165, 70%, 45%)" />
+        </svg>
+        
+        <svg className="absolute bottom-0 left-0 w-full h-[40%] opacity-[0.08]" viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,600 C400,550 800,650 1200,600 C1320,580 1440,600 1440,600 L1440,800 L0,800 Z" fill="hsl(14, 85%, 54%)" />
+        </svg>
         
         {/* Radial gradient overlays for depth */}
         <div className="absolute top-0 left-0 w-[600px] h-[600px] rounded-full opacity-20" style={{
@@ -31,14 +46,6 @@ const Hero = () => {
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full opacity-15" style={{
           background: 'radial-gradient(circle, hsl(14, 85%, 54%) 0%, transparent 70%)',
           filter: 'blur(80px)',
-        }} />
-        
-        {/* Subtle geometric circles */}
-        <div className="absolute top-1/4 right-1/4 w-[300px] h-[300px] rounded-full opacity-[0.06] border-2" style={{
-          borderColor: 'hsl(165, 70%, 45%)',
-        }} />
-        <div className="absolute bottom-1/3 left-1/3 w-[400px] h-[400px] rounded-full opacity-[0.05] border-2" style={{
-          borderColor: 'hsl(14, 85%, 54%)',
         }} />
       </div>
 
@@ -109,37 +116,67 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* 3D Hearing Aid Image - Now visible on mobile */}
+          {/* Product Image with Floating Effect */}
           <motion.div 
-            className="flex justify-center items-center mt-8 md:mt-0 px-4 pb-4 md:pb-12 overflow-visible"
+            className="flex flex-col justify-center items-center mt-8 md:mt-0 px-4 pb-4 md:pb-12 overflow-visible"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeInRight}
           >
-          <motion.div 
-            className="relative z-20"
-            style={{
-              filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25)) drop-shadow(0 0 60px hsla(165, 70%, 45%, 0.15))',
-              transform: 'perspective(1200px) rotateY(-8deg) rotateX(3deg)',
-            }}
-            whileHover={{ 
-              scale: 1.05,
-              filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 80px hsla(165, 70%, 45%, 0.25))',
-            }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-          >
-            {/* Subtle glow effect behind product */}
-            <div 
-              className="absolute inset-0 -z-10 scale-110 opacity-30"
+            {/* Starkey Logo */}
+            <motion.div
+              className="mb-6 md:mb-8"
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <img 
+                src={starkeyLogo} 
+                alt="Starkey Hearing Technologies" 
+                className="h-8 md:h-12 w-auto"
+              />
+            </motion.div>
+
+            {/* Suspended Exploded View Product */}
+            <motion.div 
+              className="relative z-20"
               style={{
-                background: 'radial-gradient(ellipse at center, hsla(165, 70%, 45%, 0.4) 0%, transparent 60%)',
-                filter: 'blur(40px)',
+                filter: 'drop-shadow(0 30px 60px rgba(0, 0, 0, 0.3)) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15)) drop-shadow(0 0 80px hsla(165, 70%, 45%, 0.2))',
+                transform: 'perspective(1500px) rotateY(-5deg) rotateX(2deg)',
               }}
-            />
+              animate={{ 
+                y: [0, -12, 0],
+              }}
+              transition={{ 
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              whileHover={{ 
+                scale: 1.05,
+                filter: 'drop-shadow(0 35px 70px rgba(0, 0, 0, 0.35)) drop-shadow(0 15px 40px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 100px hsla(165, 70%, 45%, 0.3))',
+              }}
+            >
+              {/* Enhanced glow effect for suspended look */}
+              <div 
+                className="absolute inset-0 -z-10 scale-125 opacity-40"
+                style={{
+                  background: 'radial-gradient(ellipse at center, hsla(165, 70%, 45%, 0.5) 0%, hsla(165, 70%, 45%, 0.2) 40%, transparent 70%)',
+                  filter: 'blur(50px)',
+                }}
+              />
+              <div 
+                className="absolute bottom-[-60px] left-1/2 -translate-x-1/2 w-[80%] h-[30px] -z-20 opacity-25"
+                style={{
+                  background: 'radial-gradient(ellipse at center, hsla(0, 0%, 0%, 0.4) 0%, transparent 70%)',
+                  filter: 'blur(20px)',
+                }}
+              />
               <img 
                 src={hearingAid3D} 
-                alt="Starkey OMEGA AI hearing aids - Rediscover the Sounds You Love with next generation hearing clarity" 
+                alt="Starkey exploded view hearing aid components showcasing advanced technology" 
                 className="w-full h-auto object-contain"
               />
             </motion.div>
