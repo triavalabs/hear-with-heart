@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import teamPhoto from "@/assets/team-photo-final.png";
+import lindaPhoto from "@/assets/linda-office-manager.png";
 import officeInterior from "@/assets/office-photo-upscaled.jpg";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerItem } from "@/lib/animationVariants";
@@ -74,6 +75,44 @@ const About = () => {
                 alt="Cynthia Quinn, Licensed Hearing Aid Specialist at Oviedo Hearing Center"
                 className="rounded-2xl w-full"
               />
+            </motion.div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mb-8 sm:mb-12">
+            <motion.div 
+              className="rounded-2xl"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeInLeft}
+              style={{ 
+                boxShadow: '0 0 50px 15px rgba(77, 182, 172, 0.7), 0 0 100px 40px rgba(77, 182, 172, 0.5), 0 0 150px 60px rgba(77, 182, 172, 0.3), 0 20px 50px rgba(0, 0, 0, 0.25)'
+              }}
+            >
+              <img 
+                src={lindaPhoto} 
+                alt="Linda, Office Manager at Oviedo Hearing Center"
+                className="rounded-2xl w-full"
+              />
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeInRight}
+            >
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-burnt-orange mb-4 sm:mb-6">
+                Linda, Office Manager
+              </h3>
+              <p className="text-base sm:text-lg text-dark-warm-gray mb-4 leading-relaxed">
+                Hi, I'm Linda, a retired elementary school teacher who relocated from NJ to hot and humid Florida nine years ago for my husband's job. Retirement was not for me, so I looked for a part-time job where I could still use my skills from 30+ years of teaching and working with the public.
+              </p>
+              <p className="text-base sm:text-lg text-dark-warm-gray mb-4 leading-relaxed">
+                My friend had just purchased hearing aids from Oviedo Hearing Center and told me how impressed she was with the owner who just happened to need an office manager. Almost four years later, I still enjoy this position and helping to create a welcoming, comfortable, and reassuring atmosphere for our clientele.
+              </p>
+              <p className="text-base sm:text-lg text-dark-warm-gray leading-relaxed">
+                Give us a call for an appointment so we can help you hear what you are missing.
+              </p>
             </motion.div>
           </div>
 
