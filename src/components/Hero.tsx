@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Phone } from "lucide-react";
-import hearingAid3D from "@/assets/starkey-exploded-view.png";
+import hearingAid3D from "@/assets/starkey-genesis-ai.png";
 import starkeyLogoNew from "@/assets/starkey-logo-new.png";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInRight, scaleIn, staggerContainer, staggerItem } from "@/lib/animationVariants";
@@ -243,7 +243,7 @@ const Hero = () => {
               />
               <img 
                 src={hearingAid3D} 
-                alt="Starkey exploded view hearing aid components showcasing advanced technology" 
+                alt="Starkey Genesis AI hearing aid with advanced technology" 
                 className="w-full h-auto object-contain"
               />
             </motion.div>
