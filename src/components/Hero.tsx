@@ -126,7 +126,7 @@ const Hero = () => {
           >
             {/* Suspended Exploded View Product */}
             <motion.div 
-              className="relative z-20 pt-16 md:pt-8"
+              className="relative z-20 pt-0 md:pt-8"
               style={{
                 filter: 'drop-shadow(0 30px 60px rgba(0, 0, 0, 0.3)) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15)) drop-shadow(0 0 80px hsla(165, 70%, 45%, 0.2))',
                 transform: 'perspective(1500px) rotateY(-5deg) rotateX(2deg)',
