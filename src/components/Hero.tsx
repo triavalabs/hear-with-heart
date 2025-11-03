@@ -93,7 +93,7 @@ const Hero = () => {
 
           {/* 3D Hearing Aid Image - Now visible on mobile */}
           <motion.div 
-            className="flex justify-center items-center mt-8 md:mt-0 px-4 pb-16 md:pb-24 overflow-visible"
+            className="flex justify-center items-center mt-8 md:mt-0 px-4 pb-4 md:pb-12 overflow-visible"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
