@@ -123,18 +123,6 @@ const About = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInLeft}
             >
-              <img 
-                src={officeInterior} 
-                alt="Modern and welcoming Oviedo Hearing Center office interior"
-                className="rounded-2xl shadow-2xl w-full"
-              />
-            </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeInRight}
-            >
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-burnt-orange mb-4 sm:mb-6">
                 A Welcoming Environment
               </h3>
@@ -144,6 +132,18 @@ const About = () => {
               <p className="text-base sm:text-lg text-dark-warm-gray leading-relaxed">
                 We take pride in creating a relaxed setting where you can discuss your hearing concerns openly and receive the personalized attention you deserve.
               </p>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeInRight}
+            >
+              <img 
+                src={officeInterior} 
+                alt="Modern and welcoming Oviedo Hearing Center office interior"
+                className="rounded-2xl shadow-2xl w-full"
+              />
             </motion.div>
           </div>
         </div>
