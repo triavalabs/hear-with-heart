@@ -105,9 +105,8 @@ const Hero = () => {
                 filter: 'drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2)) md:drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3))',
                 transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg)',
               }}
-              animate={{ y: [0, -12, 0] }}
-              transition={{ duration: 6, ease: "easeInOut", repeat: Infinity }}
               whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
             >
               {/* Pedestal Shadow */}
               <div 
@@ -121,7 +120,7 @@ const Hero = () => {
               <img 
                 src={hearingAid3D} 
                 alt="Starkey Edge AI rechargeable hearing aids on teal pedestal with splash design" 
-                className="w-full max-w-[90%] sm:max-w-[450px] md:max-w-2xl object-contain"
+                className="w-full h-auto object-contain"
               />
             </motion.div>
           </motion.div>
