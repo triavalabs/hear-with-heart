@@ -126,7 +126,7 @@ const Hero = () => {
           >
             {/* Suspended Exploded View Product */}
             <motion.div 
-              className="relative z-20 pt-6 md:pt-8"
+              className="relative z-20 pt-16 md:pt-8"
               style={{
                 filter: 'drop-shadow(0 30px 60px rgba(0, 0, 0, 0.3)) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15)) drop-shadow(0 0 80px hsla(165, 70%, 45%, 0.2))',
                 transform: 'perspective(1500px) rotateY(-5deg) rotateX(2deg)',
@@ -146,7 +146,7 @@ const Hero = () => {
             >
               {/* Starkey Logo - Centered Above Product */}
               <motion.div
-                className="absolute top-16 md:top-12 lg:top-16 left-1/2 -translate-x-1/2 z-30"
+                className="absolute -top-8 md:-top-10 lg:-top-12 left-1/2 -translate-x-1/2 z-30"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
