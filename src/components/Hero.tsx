@@ -144,6 +144,72 @@ const Hero = () => {
                 filter: 'drop-shadow(0 35px 70px rgba(0, 0, 0, 0.35)) drop-shadow(0 15px 40px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 100px hsla(165, 70%, 45%, 0.3))',
               }}
             >
+              {/* Sound wave decorative elements */}
+              <motion.div 
+                className="absolute inset-0 -z-10"
+                animate={{ 
+                  scale: [1, 1.15, 1],
+                  opacity: [0.3, 0.5, 0.3]
+                }}
+                transition={{ 
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                <div 
+                  className="absolute inset-0 rounded-full"
+                  style={{
+                    background: 'radial-gradient(circle, transparent 30%, hsla(165, 70%, 45%, 0.4) 50%, transparent 70%)',
+                    filter: 'blur(40px)',
+                  }}
+                />
+              </motion.div>
+              
+              <motion.div 
+                className="absolute inset-0 -z-10"
+                animate={{ 
+                  scale: [1, 1.25, 1],
+                  opacity: [0.25, 0.4, 0.25]
+                }}
+                transition={{ 
+                  duration: 3.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5
+                }}
+              >
+                <div 
+                  className="absolute inset-0 rounded-full"
+                  style={{
+                    background: 'radial-gradient(circle, transparent 40%, hsla(14, 85%, 54%, 0.3) 60%, transparent 80%)',
+                    filter: 'blur(45px)',
+                  }}
+                />
+              </motion.div>
+              
+              <motion.div 
+                className="absolute inset-0 -z-10"
+                animate={{ 
+                  scale: [1, 1.35, 1],
+                  opacity: [0.2, 0.35, 0.2]
+                }}
+                transition={{ 
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1
+                }}
+              >
+                <div 
+                  className="absolute inset-0 rounded-full"
+                  style={{
+                    background: 'radial-gradient(circle, transparent 50%, hsla(165, 70%, 45%, 0.25) 70%, transparent 90%)',
+                    filter: 'blur(50px)',
+                  }}
+                />
+              </motion.div>
+
               {/* Enhanced glow effect for suspended look */}
               <div 
                 className="absolute inset-0 -z-10 scale-125 opacity-40"
