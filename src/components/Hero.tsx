@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Phone } from "lucide-react";
 import hearingAid3D from "@/assets/starkey-exploded-view.png";
-import starkeyLogo from "@/assets/starkey-logo.png";
+import starkeyLogoNew from "@/assets/starkey-logo-new.png";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInRight, scaleIn, staggerContainer, staggerItem } from "@/lib/animationVariants";
 
@@ -144,6 +144,22 @@ const Hero = () => {
                 filter: 'drop-shadow(0 35px 70px rgba(0, 0, 0, 0.35)) drop-shadow(0 15px 40px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 100px hsla(165, 70%, 45%, 0.3))',
               }}
             >
+              {/* Starkey Logo Overlay */}
+              <motion.div
+                className="absolute top-4 left-4 z-30"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <img 
+                  src={starkeyLogoNew} 
+                  alt="Starkey Logo" 
+                  className="h-10 md:h-12 lg:h-14 w-auto"
+                  style={{ filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15))' }}
+                />
+              </motion.div>
+
               {/* Sound wave decorative elements */}
               <motion.div 
                 className="absolute inset-0 -z-10"
