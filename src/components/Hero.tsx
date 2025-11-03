@@ -124,22 +124,6 @@ const Hero = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeInRight}
           >
-            {/* Starkey Logo */}
-            <motion.div
-              className="mb-4 md:mb-6"
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <img 
-                src={starkeyLogo} 
-                alt="Starkey Hearing Technologies" 
-                className="h-12 md:h-16 lg:h-20 w-auto"
-                style={{ filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))' }}
-              />
-            </motion.div>
-
             {/* Suspended Exploded View Product */}
             <motion.div 
               className="relative z-20"
