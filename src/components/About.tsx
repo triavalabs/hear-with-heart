@@ -51,13 +51,13 @@ const About = () => {
                 Cynthia Quinn, Licensed Hearing Aid Specialist
               </h3>
               <p className="text-base sm:text-lg text-dark-warm-gray mb-4 leading-relaxed">
-                With over 20 years of experience serving the Oviedo community, Cynthia Quinn has built lasting relationships with patients who trust her expertise and genuine care.
+                Hi, I'm Cynthia. For over 20 years, I've had the privilege of serving the Oviedo community and building lasting relationships with patients who have come to trust my expertise and genuine care.
               </p>
               <p className="text-base sm:text-lg text-dark-warm-gray mb-4 leading-relaxed">
-                Cynthia specializes in comprehensive hearing evaluations, custom hearing aid fittings, and ongoing patient support. Her commitment to staying current with the latest hearing aid technology ensures you receive the best care available.
+                I specialize in comprehensive hearing evaluations, personalized hearing aid fittings, and ongoing support to ensure you get the most out of your hearing experience. Staying current with the latest hearing aid technology allows me to provide the highest quality care possible.
               </p>
               <p className="text-base sm:text-lg text-dark-warm-gray leading-relaxed">
-                At Oviedo Hearing Center, we believe hearing care is more than just technology—it's about understanding your unique lifestyle and helping you reconnect with the sounds that matter most.
+                At Oviedo Hearing Center, I believe hearing care is more than just technology—it's about truly understanding your lifestyle and helping you reconnect with the sounds and moments that matter most.
               </p>
             </motion.div>
             <motion.div 
