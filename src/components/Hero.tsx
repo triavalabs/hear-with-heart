@@ -17,10 +17,28 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-[600px] md:min-h-[700px] flex items-center">
-      {/* Background with subtle pattern */}
-      <div className="absolute inset-0">
+      {/* Dynamic gradient background with geometric accents */}
+      <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0" style={{ 
-          background: 'linear-gradient(135deg, hsl(14, 60%, 98%) 0%, hsl(20, 75%, 96%) 50%, hsl(165, 35%, 95%) 100%)' 
+          background: 'linear-gradient(135deg, hsl(165, 75%, 96%) 0%, hsl(14, 65%, 97%) 40%, hsl(20, 80%, 95%) 100%)' 
+        }} />
+        
+        {/* Radial gradient overlays for depth */}
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] rounded-full opacity-20" style={{
+          background: 'radial-gradient(circle, hsl(165, 70%, 45%) 0%, transparent 70%)',
+          filter: 'blur(60px)',
+        }} />
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full opacity-15" style={{
+          background: 'radial-gradient(circle, hsl(14, 85%, 54%) 0%, transparent 70%)',
+          filter: 'blur(80px)',
+        }} />
+        
+        {/* Subtle geometric circles */}
+        <div className="absolute top-1/4 right-1/4 w-[300px] h-[300px] rounded-full opacity-[0.06] border-2" style={{
+          borderColor: 'hsl(165, 70%, 45%)',
+        }} />
+        <div className="absolute bottom-1/3 left-1/3 w-[400px] h-[400px] rounded-full opacity-[0.05] border-2" style={{
+          borderColor: 'hsl(14, 85%, 54%)',
         }} />
       </div>
 
@@ -99,24 +117,26 @@ const Hero = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeInRight}
           >
-            <motion.div 
-              className="relative z-20"
+          <motion.div 
+            className="relative z-20"
+            style={{
+              filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25)) drop-shadow(0 0 60px hsla(165, 70%, 45%, 0.15))',
+              transform: 'perspective(1200px) rotateY(-8deg) rotateX(3deg)',
+            }}
+            whileHover={{ 
+              scale: 1.05,
+              filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 80px hsla(165, 70%, 45%, 0.25))',
+            }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+          >
+            {/* Subtle glow effect behind product */}
+            <div 
+              className="absolute inset-0 -z-10 scale-110 opacity-30"
               style={{
-                filter: 'drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2)) md:drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3))',
-                transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg)',
+                background: 'radial-gradient(ellipse at center, hsla(165, 70%, 45%, 0.4) 0%, transparent 60%)',
+                filter: 'blur(40px)',
               }}
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            >
-              {/* Pedestal Shadow */}
-              <div 
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[70%] h-8 pointer-events-none"
-                style={{
-                  background: 'radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.08) 40%, transparent 70%)',
-                  filter: 'blur(8px)',
-                  zIndex: -1,
-                }}
-              />
+            />
               <img 
                 src={hearingAid3D} 
                 alt="Starkey Edge AI rechargeable hearing aids on teal pedestal with splash design" 
