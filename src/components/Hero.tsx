@@ -93,20 +93,21 @@ const Hero = () => {
 
           {/* 3D Hearing Aid Image - Now visible on mobile */}
           <motion.div 
-            className="flex justify-center items-center mt-8 md:mt-0 px-4 pb-8 md:pb-12"
+            className="flex justify-center items-center mt-8 md:mt-0 px-4 pb-16 md:pb-24 overflow-visible"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeInRight}
           >
             <motion.div 
-              className="relative animate-[float_6s_ease-in-out_infinite]"
+              className="relative z-20"
               style={{
                 filter: 'drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2)) md:drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3))',
                 transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg)',
               }}
+              animate={{ y: [0, -12, 0] }}
+              transition={{ duration: 6, ease: "easeInOut", repeat: Infinity }}
               whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
             >
               {/* Pedestal Shadow */}
               <div 
@@ -128,7 +129,7 @@ const Hero = () => {
       </div>
 
       {/* Decorative Wave Element */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-warm-cream to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-warm-cream to-transparent z-0 pointer-events-none" />
     </section>
   );
 };
