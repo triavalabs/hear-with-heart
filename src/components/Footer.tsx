@@ -34,15 +34,6 @@ const Footer = () => {
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a 
-                  href="https://instagram.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white hover:text-main-teal transition-colors duration-300"
-                  aria-label="Visit our Instagram page"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
               </div>
             </motion.div>
 
