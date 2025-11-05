@@ -117,7 +117,7 @@ const Contact = () => {
                     Share your experience to help others in Seminole County find quality hearing care
                   </CardDescription>
                   <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold">
-                    <a href="https://www.google.com/maps?cid=14472029919860026218" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.google.com/maps/place/Oviedo+Hearing+Center/@28.6391451,-81.2072568,17z/data=!4m18!1m9!3m8!1s0x88e769076c6be51b:0xc8d6fa893814eb6a!2sOviedo+Hearing+Center!8m2!3d28.6391451!4d-81.2072568!9m1!1b1!16s%2Fg%2F1tjdmkmq!3m7!1s0x88e769076c6be51b:0xc8d6fa893814eb6a!8m2!3d28.6391451!4d-81.2072568!9m1!1b1!16s%2Fg%2F1tjdmkmq?entry=ttu&g_ep=EgoyMDI1MTEwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
                       Write a Google Review
                     </a>
                   </Button>
