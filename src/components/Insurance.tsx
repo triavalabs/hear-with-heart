@@ -4,14 +4,10 @@ import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animationVariants";
 
 const insuranceProviders = [
+  "UnitedHealthcare",
   "Blue Cross Blue Shield",
-  "UnitedHealthcare", 
   "Aetna",
-  "Cigna",
-  "Humana",
-  "Medicare",
-  "Tricare",
-  "VSP Vision Care"
+  "Cigna"
 ];
 
 const Insurance = () => {
@@ -63,18 +59,18 @@ const Insurance = () => {
             <div className="relative">
               {/* First row - scrolling left */}
               <div className="overflow-hidden mb-8">
-                <div className="flex gap-6 animate-[scroll_30s_linear_infinite]">
-                  {[...insuranceProviders, ...insuranceProviders].map((provider, index) => (
+                <div className="flex gap-8 animate-[scroll_20s_linear_infinite]">
+                  {[...insuranceProviders, ...insuranceProviders, ...insuranceProviders].map((provider, index) => (
                     <div 
                        key={`row1-${index}`}
-                       className="flex-shrink-0 px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                       className="flex-shrink-0 px-8 sm:px-10 py-4 sm:py-5 rounded-full border-2 hover:scale-105 transition-all duration-300 whitespace-nowrap"
                       style={{ 
-                        background: 'rgba(255, 255, 255, 0.85)',
+                        background: 'rgba(255, 255, 255, 0.9)',
                         borderColor: '#278C8C',
-                        boxShadow: '0 4px 12px rgba(39, 140, 140, 0.15)',
+                        boxShadow: '0 4px 16px rgba(39, 140, 140, 0.2)',
                       }}
                     >
-                      <span className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: '#278C8C' }}>
+                      <span className="text-2xl sm:text-3xl md:text-4xl font-bold" style={{ color: '#278C8C' }}>
                         {provider}
                       </span>
                     </div>
@@ -84,19 +80,19 @@ const Insurance = () => {
 
               {/* Second row - scrolling right */}
               <div className="overflow-hidden">
-                <div className="flex gap-6 animate-[scroll_35s_linear_infinite_reverse]">
-                  {[...insuranceProviders.slice().reverse(), ...insuranceProviders.slice().reverse()].map((provider, index) => (
+                <div className="flex gap-8 animate-[scroll_25s_linear_infinite_reverse]">
+                  {[...insuranceProviders.slice().reverse(), ...insuranceProviders.slice().reverse(), ...insuranceProviders.slice().reverse()].map((provider, index) => (
                     <div 
                        key={`row2-${index}`}
-                       className="flex-shrink-0 px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                       className="flex-shrink-0 px-8 sm:px-10 py-4 sm:py-5 rounded-full border-2 hover:scale-105 transition-all duration-300 whitespace-nowrap"
                       style={{ 
-                        background: 'rgba(255, 255, 255, 0.85)',
+                        background: 'rgba(255, 255, 255, 0.9)',
                         borderColor: '#D45A2C',
-                        boxShadow: '0 4px 12px rgba(212, 90, 44, 0.15)',
+                        boxShadow: '0 4px 16px rgba(212, 90, 44, 0.2)',
                       }}
                     >
                       <span 
-                        className="text-base sm:text-xl md:text-2xl font-semibold"
+                        className="text-xl sm:text-2xl md:text-3xl font-bold"
                         style={{ 
                           color: '#D45A2C',
                         }}
