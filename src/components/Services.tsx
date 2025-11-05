@@ -7,20 +7,24 @@ import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animationVariants";
 const services = [{
   image: evaluationImg,
-  title: "Hearing Evaluations",
-  price: "$78"
+  title: "Comprehensive Hearing Evaluations",
+  description: "Professional hearing tests to assess your hearing health and needs",
+  alt: "Hearing evaluation and testing services - comprehensive hearing assessment at Oviedo Hearing Center, FL"
 }, {
   image: fittingImg,
-  title: "Hearing Aid Fittings",
-  price: "$111"
+  title: "Expert Hearing Aid Fittings",
+  description: "Custom hearing aid selection and programming tailored to your lifestyle",
+  alt: "Hearing aid fitting services - personalized hearing aid customization in Oviedo, Florida"
 }, {
   image: maintenanceImg,
-  title: "Maintenance & Repairs",
-  price: "$55"
+  title: "Hearing Aid Maintenance & Repairs",
+  description: "Professional maintenance and repair services for all hearing aid brands",
+  alt: "Hearing aid maintenance and repair services - expert hearing aid care in Oviedo, FL"
 }, {
   image: careImg,
-  title: "Ongoing Care & Support",
-  price: "$89"
+  title: "Ongoing Hearing Care Support",
+  description: "Continuous support and adjustments to ensure optimal hearing performance",
+  alt: "Ongoing hearing care support services - long-term hearing health management at Oviedo Hearing Center"
 }];
 const Services = () => {
   return <section id="services" className="py-16 sm:py-20" style={{
@@ -35,9 +39,9 @@ const Services = () => {
             <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
               → WHAT WE OFFER
             </Badge>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              <span className="text-burnt-orange">Our</span> <span className="text-main-teal">Services</span>
-            </h2>
+            <motion.h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" variants={staggerItem}>
+              <span className="text-burnt-orange">Hearing Care</span> <span className="text-main-teal">Services in Oviedo, FL</span>
+            </motion.h2>
           </motion.div>
 
           <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12" initial="hidden" whileInView="visible" viewport={{
@@ -51,12 +55,14 @@ const Services = () => {
             duration: 0.3
           }}>
                 <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden mb-4 sm:mb-6 shadow-xl">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                  <img src={service.image} alt={service.alt} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-burnt-orange mb-2">
                   {service.title}
                 </h3>
-                
+                <p className="text-dark-warm-gray text-sm sm:text-base px-4">
+                  {service.description}
+                </p>
               </motion.div>)}
           </motion.div>
         </div>

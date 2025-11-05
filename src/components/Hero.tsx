@@ -70,13 +70,13 @@ const Hero = () => {
             <motion.h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight" variants={staggerItem}>
               <span style={{
               color: 'hsl(14, 85%, 54%)'
-            }}>TRUSTED<br />HEARING CARE</span>
+            }}>EXPERT<br />HEARING CARE</span>
               <br />
-              <span className="text-main-teal">IN OVIEDO<br />SINCE 2002</span>
+              <span className="text-main-teal">IN OVIEDO, FL<br />SINCE 2002</span>
             </motion.h1>
             
             <motion.p className="text-lg sm:text-xl md:text-2xl text-dark-warm-gray mb-6 sm:mb-8 leading-relaxed" variants={staggerItem}>
-              Experience personalized, professional hearing care from a team that treats you like family.
+              Licensed audiologist providing comprehensive hearing evaluations, hearing aid fittings, and personalized care for Seminole County residents.
             </motion.p>
             
             <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4" variants={staggerItem}>
@@ -182,7 +182,7 @@ const Hero = () => {
               background: 'radial-gradient(ellipse at center, hsla(0, 0%, 0%, 0.4) 0%, transparent 70%)',
               filter: 'blur(20px)'
             }} />
-              <img src={hearingAid3D} alt="Starkey Genesis AI hearing aid with advanced technology" className="w-full h-auto object-contain" />
+              <img src={hearingAid3D} alt="Advanced Starkey Genesis AI hearing aids - premium hearing aid technology available at Oviedo Hearing Center in Oviedo, FL" className="w-full h-auto object-contain" loading="eager" />
             </motion.div>
           </motion.div>
         </div>

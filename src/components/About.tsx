@@ -29,13 +29,13 @@ const About = () => {
               style={{ color: 'hsl(14, 85%, 54%)' }}
               variants={staggerItem}
             >
-              Your Hearing Care Partner Since 2002
+              Meet Your Oviedo Hearing Specialist
             </motion.h2>
             <motion.p 
               className="text-lg sm:text-xl text-dark-warm-gray max-w-2xl mx-auto"
               variants={staggerItem}
             >
-              Compassionate, experienced care from a team that knows you by name
+              Over 20 years of trusted hearing care serving Oviedo and Seminole County, Florida
             </motion.p>
           </motion.div>
 
@@ -48,16 +48,16 @@ const About = () => {
               variants={fadeInRight}
             >
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-burnt-orange mb-4 sm:mb-6">
-                Cynthia Quinn, Licensed Hearing Aid Specialist
+                Cynthia Quinn - Licensed Hearing Aid Specialist, Oviedo FL
               </h3>
               <p className="text-base sm:text-lg text-dark-warm-gray mb-4 leading-relaxed">
-                Hi, I'm Cynthia. For over 20 years, I've had the privilege of serving the Oviedo community and building lasting relationships with patients who have come to trust my expertise and genuine care.
+                Hi, I'm Cynthia. For over 20 years, I've been Oviedo's trusted hearing aid specialist, building lasting relationships with patients throughout Seminole County who value expert, personalized hearing care.
               </p>
               <p className="text-base sm:text-lg text-dark-warm-gray mb-4 leading-relaxed">
-                I specialize in comprehensive hearing evaluations, personalized hearing aid fittings, and ongoing support to ensure you get the most out of your hearing experience. Staying current with the latest hearing aid technology allows me to provide the highest quality care possible.
+                As a Florida licensed hearing aid specialist, I provide comprehensive hearing tests, advanced hearing aid fittings, and ongoing support. I stay current with the latest hearing aid technology from leading brands like Starkey, Phonak, and Oticon to ensure you receive the best hearing solutions available.
               </p>
               <p className="text-base sm:text-lg text-dark-warm-gray leading-relaxed">
-                At Oviedo Hearing Center, I believe hearing care is more than just technology—it's about truly understanding your lifestyle and helping you reconnect with the sounds and moments that matter most.
+                At Oviedo Hearing Center, hearing care is about more than technology—it's about understanding your unique lifestyle needs and helping you reconnect with sounds and moments that matter most to you and your family.
               </p>
             </motion.div>
             <motion.div 
@@ -72,8 +72,9 @@ const About = () => {
             >
               <img 
                 src={teamPhoto} 
-                alt="Cynthia Quinn, Licensed Hearing Aid Specialist at Oviedo Hearing Center"
+                alt="Cynthia Quinn - Licensed Hearing Aid Specialist and audiologist at Oviedo Hearing Center in Oviedo, Florida"
                 className="rounded-2xl w-full"
+                loading="lazy"
               />
             </motion.div>
           </div>
@@ -91,8 +92,9 @@ const About = () => {
             >
               <img 
                 src={lindaPhoto} 
-                alt="Linda, Office Manager at Oviedo Hearing Center"
+                alt="Linda - Office Manager at Oviedo Hearing Center providing friendly patient care in Oviedo, FL"
                 className="rounded-2xl w-full"
+                loading="lazy"
               />
             </motion.div>
             <motion.div
@@ -141,8 +143,9 @@ const About = () => {
             >
               <img 
                 src={officeInterior} 
-                alt="Modern and welcoming Oviedo Hearing Center office interior"
+                alt="Modern, welcoming Oviedo Hearing Center office interior - comfortable hearing clinic in Oviedo, Florida"
                 className="rounded-2xl shadow-2xl w-full"
+                loading="lazy"
               />
             </motion.div>
           </div>
