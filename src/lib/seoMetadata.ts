@@ -38,7 +38,7 @@ export const businessInfo = {
 
 export const seoPages = {
   home: {
-    title: "Oviedo Hearing Center | Audiologist & Hearing Aids in Oviedo, FL",
+    title: "Oviedo Hearing Center | Hearing Aids in Oviedo FL",
     description: "Trusted hearing care in Oviedo, FL since 2002. Expert hearing evaluations, hearing aid fittings & repairs. Licensed specialists serving Seminole County. Call (407) 366-7766.",
     keywords: "hearing aids Oviedo FL, audiologist Oviedo, hearing test near me, hearing aid specialist Oviedo, hearing loss testing Seminole County, hearing care Florida",
     canonical: "https://www.oviedohearing.com/"
