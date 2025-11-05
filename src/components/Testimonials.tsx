@@ -56,14 +56,14 @@ const testimonials = [
 
 const ReviewCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
   <div 
-    className="flex-shrink-0 w-[400px] bg-white rounded-2xl p-6 border border-border-gray hover:shadow-xl transition-all duration-300"
+    className="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[400px] bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-border-gray hover:shadow-xl transition-all duration-300"
     style={{
       boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)',
     }}
   >
-    <div className="flex items-start gap-4 mb-4">
+    <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
       <div 
-        className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
+        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-sm sm:text-base"
         style={{ 
           background: 'linear-gradient(135deg, hsl(174, 44%, 53%), hsl(174, 44%, 63%))',
         }}
@@ -71,15 +71,15 @@ const ReviewCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) =>
         {testimonial.initials}
       </div>
       <div className="flex-1 min-w-0">
-        <h4 className="font-bold text-burnt-orange text-lg mb-1">{testimonial.name}</h4>
-        <div className="flex gap-0.5 mb-2">
+        <h4 className="font-bold text-burnt-orange text-base sm:text-lg mb-0.5 sm:mb-1">{testimonial.name}</h4>
+        <div className="flex gap-0.5 mb-1.5 sm:mb-2">
           {Array.from({ length: testimonial.rating }).map((_, i) => (
-            <Star key={i} className="w-4 h-4 fill-burnt-orange text-burnt-orange" />
+            <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-burnt-orange text-burnt-orange" />
           ))}
         </div>
       </div>
     </div>
-    <p className="text-dark-warm-gray leading-relaxed">
+    <p className="text-dark-warm-gray leading-relaxed text-sm sm:text-base">
       {testimonial.text}
     </p>
   </div>
@@ -129,10 +129,10 @@ const Testimonials = () => {
 
           <div className="relative">
             {/* First column - scrolling up */}
-            <div className="flex gap-6 mb-6">
+            <div className="flex gap-4 sm:gap-6 mb-4 sm:mb-6">
               <div className="overflow-hidden flex-1">
                 <div 
-                  className="flex gap-6"
+                  className="flex gap-4 sm:gap-6"
                   style={{
                     animation: 'scroll 40s linear infinite',
                   }}
@@ -145,10 +145,10 @@ const Testimonials = () => {
             </div>
 
             {/* Second column - scrolling down */}
-            <div className="flex gap-6">
+            <div className="flex gap-4 sm:gap-6">
               <div className="overflow-hidden flex-1">
                 <div 
-                  className="flex gap-6"
+                  className="flex gap-4 sm:gap-6"
                   style={{
                     animation: 'scroll 45s linear infinite reverse',
                   }}
@@ -169,7 +169,29 @@ const Testimonials = () => {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(calc(-400px * 4 - 6rem * 4));
+            transform: translateX(calc(-280px * 4 - 4rem * 4));
+          }
+        }
+
+        @media (min-width: 640px) {
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(calc(-320px * 4 - 6rem * 4));
+            }
+          }
+        }
+
+        @media (min-width: 768px) {
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(calc(-400px * 4 - 6rem * 4));
+            }
           }
         }
       `}</style>
