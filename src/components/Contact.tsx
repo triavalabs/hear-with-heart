@@ -104,6 +104,28 @@ const Contact = () => {
               </Card>
               </motion.div>
 
+              {/* Google Review Button */}
+              <motion.div variants={staggerItem}>
+              <Card className="border-2 border-border-gray bg-white shadow-md">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3 text-burnt-orange">
+                    <Mail className="w-6 h-6 text-main-teal" />
+                    Leave Us a Review
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-dark-warm-gray text-base mb-4">
+                    Share your experience to help others in Seminole County find quality hearing care
+                  </CardDescription>
+                  <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold">
+                    <a href="https://www.google.com/maps?cid=14472029919860026218" target="_blank" rel="noopener noreferrer">
+                      Write a Google Review
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+              </motion.div>
+
               {/* Map Embed */}
               <motion.div variants={staggerItem}>
               <Card className="border-2 border-border-gray bg-white shadow-md overflow-hidden">
