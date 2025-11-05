@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Phone } from "lucide-react";
-import hearingAid3D from "@/assets/starkey-genesis-ai.png";
+import hearingAid3D from "@/assets/starkey-hearing-aid-exploded.png";
 import starkeyLogoNew from "@/assets/starkey-logo-new.png";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInRight, scaleIn, staggerContainer, staggerItem } from "@/lib/animationVariants";
