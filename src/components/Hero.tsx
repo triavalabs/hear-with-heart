@@ -12,6 +12,9 @@ const Hero = () => {
       behavior: 'smooth'
     });
   };
+  const handleCallClick = () => {
+    window.location.href = 'tel:+14073657555';
+  };
   return <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
       {/* Wave-based background design */}
       <div className="absolute inset-0 overflow-hidden">
@@ -80,7 +83,13 @@ const Hero = () => {
               <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 min-h-[44px]" onClick={handleScheduleClick}>
                 Schedule Your Hearing Consultation
               </Button>
-              <a href="tel:+14073667766" className="btn-call">Call Our Office</a>
+              <Button size="lg" variant="outline" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 bg-white hover:bg-white/90 transition-all duration-300 min-h-[44px]" style={{
+              borderColor: 'hsl(14, 85%, 54%)',
+              color: 'hsl(14, 85%, 54%)'
+            }} onClick={handleCallClick}>
+                <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                Call Our Office
+              </Button>
             </motion.div>
           </motion.div>
 
