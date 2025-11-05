@@ -2,49 +2,37 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animationVariants";
-
 const ResourcesPage = () => {
   return <div className="min-h-screen">
       <section className="py-16 md:py-24" style={{
-        background: 'linear-gradient(180deg, hsl(165, 35%, 95%) 0%, hsl(174, 40%, 92%) 100%)'
-      }}>
+      background: 'linear-gradient(180deg, hsl(165, 35%, 95%) 0%, hsl(174, 40%, 92%) 100%)'
+    }}>
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <motion.div
-              className="text-center mb-12"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={staggerContainer}
-            >
+            <motion.div className="text-center mb-12" initial="hidden" whileInView="visible" viewport={{
+            once: true,
+            amount: 0.3
+          }} variants={staggerContainer}>
               <motion.div variants={fadeInUp}>
                 <Badge className="mb-4 px-4 py-1.5 text-sm font-medium bg-secondary text-white shadow-lg">
                   → Hearing Health Resources
                 </Badge>
               </motion.div>
-              <motion.h1 
-                className="text-4xl md:text-5xl font-bold mb-4"
-                style={{ color: 'hsl(14, 85%, 54%)' }}
-                variants={staggerItem}
-              >
+              <motion.h1 className="text-4xl md:text-5xl font-bold mb-4" style={{
+              color: 'hsl(14, 85%, 54%)'
+            }} variants={staggerItem}>
                 Patient Resources for Hearing Care in Oviedo, FL
               </motion.h1>
-              <motion.p
-                className="text-lg text-dark-warm-gray"
-                variants={staggerItem}
-              >
+              <motion.p className="text-lg text-dark-warm-gray" variants={staggerItem}>
                 Everything you need to know about our hearing services and insurance coverage
               </motion.p>
             </motion.div>
             
             {/* FAQs Section */}
-            <motion.div
-              className="mb-12"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeInUp}
-            >
+            <motion.div className="mb-12" initial="hidden" whileInView="visible" viewport={{
+            once: true,
+            amount: 0.3
+          }} variants={fadeInUp}>
               <h2 className="text-3xl font-bold text-burnt-orange mb-6">Frequently Asked Questions About Hearing Care</h2>
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-lg shadow-md border-2 border-border-gray">
@@ -67,23 +55,20 @@ const ResourcesPage = () => {
             </motion.div>
 
             {/* Insurance Info */}
-            <motion.div
-              className="mb-12"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeInUp}
-            >
+            <motion.div className="mb-12" initial="hidden" whileInView="visible" viewport={{
+            once: true,
+            amount: 0.3
+          }} variants={fadeInUp}>
               <h2 className="text-3xl font-bold text-burnt-orange mb-6">Hearing Aid Insurance Coverage in Seminole County</h2>
               <div className="bg-white border-2 border-border-gray p-6 rounded-lg shadow-md">
                 <p className="text-dark-warm-gray mb-4">Oviedo Hearing Center accepts most major health insurance plans for hearing evaluations and hearing aid services, including:</p>
                 <ul className="list-disc list-inside text-dark-warm-gray space-y-2 mb-4">
-                  <li>UnitedHealthcare (AARP & Medicare Advantage)</li>
+                  <li>UnitedHealthcare </li>
                   <li>Blue Cross Blue Shield of Florida</li>
                   <li>Aetna</li>
                   <li>Cigna</li>
-                  <li>Humana Medicare</li>
-                  <li>Medicare (for hearing evaluations)</li>
+                  
+                  
                 </ul>
                 <p className="text-dark-warm-gray font-semibold">Call our Oviedo office at (407) 366-7766 to verify your specific hearing aid insurance coverage and benefits.</p>
               </div>
