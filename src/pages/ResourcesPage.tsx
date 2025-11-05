@@ -1,8 +1,6 @@
 import Footer from "@/components/Footer";
-
 const ResourcesPage = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
@@ -35,12 +33,12 @@ const ResourcesPage = () => {
               <div className="bg-white border border-border-gray p-6 rounded-lg">
                 <p className="text-body-gray mb-4">We accept most major insurance plans, including:</p>
                 <ul className="list-disc list-inside text-body-gray space-y-2 mb-4">
-                  <li>Medicare</li>
+                  <li>United</li>
                   <li>Blue Cross Blue Shield</li>
                   <li>UnitedHealthcare</li>
                   <li>Aetna</li>
                   <li>Cigna</li>
-                  <li>Humana</li>
+                  
                 </ul>
                 <p className="text-body-gray">Please contact our office to verify your specific coverage.</p>
               </div>
@@ -97,8 +95,6 @@ const ResourcesPage = () => {
         </div>
       </section>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default ResourcesPage;
