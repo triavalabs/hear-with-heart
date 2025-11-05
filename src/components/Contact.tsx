@@ -151,15 +151,15 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="p-6 pt-0">
                 <div className="w-full rounded-md overflow-hidden" style={{
-                  minHeight: '540px'
+                  minHeight: '850px'
                 }}>
                   <iframe src="https://links.pixelcloud9.com/widget/form/mlgLml3ue7L3oE2mMHp3" style={{
                     width: '100%',
                     height: '100%',
-                    minHeight: '562px',
+                    minHeight: '850px',
                     border: 'none',
                     borderRadius: '3px'
-                  }} id="inline-mlgLml3ue7L3oE2mMHp3" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Oviedo Hearing Center Request - Copy for site embed" data-height="562" data-layout-iframe-id="inline-mlgLml3ue7L3oE2mMHp3" data-form-id="mlgLml3ue7L3oE2mMHp3" title="Oviedo Hearing Center Request - Copy for site embed" />
+                  }} id="inline-mlgLml3ue7L3oE2mMHp3" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Oviedo Hearing Center Request - Copy for site embed" data-height="850" data-layout-iframe-id="inline-mlgLml3ue7L3oE2mMHp3" data-form-id="mlgLml3ue7L3oE2mMHp3" title="Oviedo Hearing Center Request - Copy for site embed" />
                 </div>
                 <script src="https://links.pixelcloud9.com/js/form_embed.js" />
               </CardContent>
