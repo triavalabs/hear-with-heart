@@ -132,7 +132,7 @@ const Testimonials = () => {
                 className="bg-burnt-orange hover:bg-burnt-orange/90 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <a
-                  href="https://search.google.com/local/writereview?placeid=ChIJXxqWGGF354gRa7gD4rkrBuQ"
+                  href="https://www.google.com/maps?cid=14472029919860026218"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2"
