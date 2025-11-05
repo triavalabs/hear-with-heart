@@ -4,7 +4,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerItem } from "@/lib/animationVariants";
-
 const Contact = () => {
   return <section id="contact" className="py-16 sm:py-20" style={{
     background: 'linear-gradient(135deg, hsl(20, 80%, 95%) 0%, hsl(38, 42%, 98%) 50%, hsl(165, 35%, 95%) 100%)'
@@ -144,31 +143,18 @@ const Contact = () => {
             amount: 0.3
           }} variants={fadeInRight}>
             <Card className="border-2 border-border-gray bg-white shadow-md">
-              <CardHeader>
-                <CardTitle className="text-2xl text-burnt-orange">Send Us a Message</CardTitle>
-                <CardDescription className="text-lg text-dark-warm-gray">
-                  Fill out the form below and we'll respond within 24 hours.
-                </CardDescription>
-              </CardHeader>
+              
               <CardContent className="p-0">
-                <div className="w-full" style={{ minHeight: '562px' }}>
-                  <iframe
-                    src="https://links.pixelcloud9.com/widget/form/mlgLml3ue7L3oE2mMHp3"
-                    style={{ width: '100%', height: '100%', minHeight: '562px', border: 'none', borderRadius: '3px' }}
-                    id="inline-mlgLml3ue7L3oE2mMHp3" 
-                    data-layout="{'id':'INLINE'}"
-                    data-trigger-type="alwaysShow"
-                    data-trigger-value=""
-                    data-activation-type="alwaysActivated"
-                    data-activation-value=""
-                    data-deactivation-type="neverDeactivate"
-                    data-deactivation-value=""
-                    data-form-name="Oviedo Hearing Center Request - Copy for site embed"
-                    data-height="562"
-                    data-layout-iframe-id="inline-mlgLml3ue7L3oE2mMHp3"
-                    data-form-id="mlgLml3ue7L3oE2mMHp3"
-                    title="Oviedo Hearing Center Request - Copy for site embed"
-                  />
+                <div className="w-full" style={{
+                  minHeight: '562px'
+                }}>
+                  <iframe src="https://links.pixelcloud9.com/widget/form/mlgLml3ue7L3oE2mMHp3" style={{
+                    width: '100%',
+                    height: '100%',
+                    minHeight: '562px',
+                    border: 'none',
+                    borderRadius: '3px'
+                  }} id="inline-mlgLml3ue7L3oE2mMHp3" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Oviedo Hearing Center Request - Copy for site embed" data-height="562" data-layout-iframe-id="inline-mlgLml3ue7L3oE2mMHp3" data-form-id="mlgLml3ue7L3oE2mMHp3" title="Oviedo Hearing Center Request - Copy for site embed" />
                 </div>
                 <script src="https://links.pixelcloud9.com/js/form_embed.js" />
               </CardContent>
