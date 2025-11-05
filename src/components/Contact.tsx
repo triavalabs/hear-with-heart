@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageSquare } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerItem } from "@/lib/animationVariants";
 const Contact = () => {
@@ -143,10 +143,15 @@ const Contact = () => {
             amount: 0.3
           }} variants={fadeInRight}>
             <Card className="border-2 border-border-gray bg-white shadow-md">
-              
-              <CardContent className="p-0">
-                <div className="w-full" style={{
-                  minHeight: '562px'
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3 text-burnt-orange">
+                  <MessageSquare className="w-6 h-6 text-main-teal" />
+                  Send Us a Message
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-6 pt-0">
+                <div className="w-full rounded-md overflow-hidden" style={{
+                  minHeight: '540px'
                 }}>
                   <iframe src="https://links.pixelcloud9.com/widget/form/mlgLml3ue7L3oE2mMHp3" style={{
                     width: '100%',
