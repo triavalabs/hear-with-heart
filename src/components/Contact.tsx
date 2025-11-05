@@ -1,44 +1,11 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerItem } from "@/lib/animationVariants";
+
 const Contact = () => {
-  const {
-    toast
-  } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: ""
-  });
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would integrate with GHL form
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours."
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: ""
-    });
-  };
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
   return <section id="contact" className="py-16 sm:py-20" style={{
     background: 'linear-gradient(135deg, hsl(20, 80%, 95%) 0%, hsl(38, 42%, 98%) 50%, hsl(165, 35%, 95%) 100%)'
   }}>
@@ -183,40 +150,27 @@ const Contact = () => {
                   Fill out the form below and we'll respond within 24 hours.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-burnt-orange text-base font-semibold">
-                      Full Name *
-                    </Label>
-                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required className="text-lg py-6 border-2 border-border-gray focus:border-main-teal min-h-[44px]" placeholder="John Smith" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-burnt-orange text-base font-semibold">
-                      Email Address *
-                    </Label>
-                    <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required className="text-lg py-6 border-2 border-border-gray focus:border-main-teal min-h-[44px]" placeholder="john@example.com" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-burnt-orange text-base font-semibold">
-                      Phone Number
-                    </Label>
-                    <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} className="text-lg py-6 border-2 border-border-gray focus:border-main-teal min-h-[44px]" placeholder="(407) 555-0123" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-burnt-orange text-base font-semibold">
-                      Message *
-                    </Label>
-                    <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required className="min-h-[150px] text-lg border-2 border-border-gray focus:border-main-teal" placeholder="Tell us how we can help..." />
-                  </div>
-
-                  <Button type="submit" size="lg" className="w-full text-lg py-6 bg-secondary hover:bg-secondary/90 text-secondary-foreground min-h-[44px]">
-                    Send Message
-                  </Button>
-                </form>
+              <CardContent className="p-0">
+                <div className="w-full" style={{ minHeight: '562px' }}>
+                  <iframe
+                    src="https://links.pixelcloud9.com/widget/form/mlgLml3ue7L3oE2mMHp3"
+                    style={{ width: '100%', height: '100%', minHeight: '562px', border: 'none', borderRadius: '3px' }}
+                    id="inline-mlgLml3ue7L3oE2mMHp3" 
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Oviedo Hearing Center Request - Copy for site embed"
+                    data-height="562"
+                    data-layout-iframe-id="inline-mlgLml3ue7L3oE2mMHp3"
+                    data-form-id="mlgLml3ue7L3oE2mMHp3"
+                    title="Oviedo Hearing Center Request - Copy for site embed"
+                  />
+                </div>
+                <script src="https://links.pixelcloud9.com/js/form_embed.js" />
               </CardContent>
             </Card>
             </motion.div>
