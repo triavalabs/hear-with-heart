@@ -112,8 +112,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-dark-warm-gray text-lg">
-                    <a href="mailto:info@oviedohearing.com" className="hover:text-main-teal transition-colors">
-                      info@oviedohearing.com
+                    <a href="mailto:info@oviedohearing.com" className="hover:text-main-teal transition-colors">oviedohearing@gmail.com
                     </a>
                   </CardDescription>
                 </CardContent>
@@ -151,15 +150,8 @@ const Contact = () => {
                   <CardDescription className="text-dark-warm-gray text-base mb-4">
                     Share your experience to help others in Seminole County find quality hearing care
                   </CardDescription>
-                  <Button 
-                    asChild 
-                    className="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold"
-                  >
-                    <a
-                      href="https://www.google.com/maps?cid=14472029919860026218"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                  <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold">
+                    <a href="https://www.google.com/maps?cid=14472029919860026218" target="_blank" rel="noopener noreferrer">
                       Write a Google Review
                     </a>
                   </Button>
