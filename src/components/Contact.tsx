@@ -143,12 +143,7 @@ const Contact = () => {
             amount: 0.3
           }} variants={fadeInRight}>
             <Card className="border-2 border-border-gray bg-white shadow-md">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-burnt-orange">
-                  <MessageSquare className="w-6 h-6 text-main-teal" />
-                  Send Us a Message
-                </CardTitle>
-              </CardHeader>
+              
               <CardContent className="p-6 pt-0">
                 <div className="w-full rounded-md overflow-hidden" style={{
                   minHeight: '850px'
