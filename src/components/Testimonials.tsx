@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
-import { Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Star, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animationVariants";
 
@@ -124,6 +125,22 @@ const Testimonials = () => {
               </div>
               <span className="text-lg sm:text-xl font-bold text-burnt-orange">5.0</span>
               <span className="text-sm sm:text-base text-dark-warm-gray">· average reviews</span>
+            </motion.div>
+            <motion.div variants={staggerItem}>
+              <Button
+                asChild
+                className="bg-burnt-orange hover:bg-burnt-orange/90 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <a
+                  href="https://search.google.com/local/writereview?placeid=ChIJXxqWGGF354gRa7gD4rkrBuQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
+                  Write a Review
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </Button>
             </motion.div>
           </motion.div>
 
