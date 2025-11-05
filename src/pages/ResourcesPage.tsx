@@ -67,8 +67,7 @@ const ResourcesPage = () => {
                   <li>Blue Cross Blue Shield of Florida</li>
                   <li>Aetna</li>
                   <li>Cigna</li>
-                  
-                  
+                  <li>HealthSpring</li>
                 </ul>
                 <p className="text-dark-warm-gray font-semibold">Call our Oviedo office at (407) 366-7766 to verify your specific hearing aid insurance coverage and benefits.</p>
               </div>
