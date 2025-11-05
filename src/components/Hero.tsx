@@ -76,7 +76,7 @@ const Hero = () => {
             </motion.h1>
             
             <motion.p className="text-lg sm:text-xl md:text-2xl text-dark-warm-gray mb-6 sm:mb-8 leading-relaxed" variants={staggerItem}>
-              Licensed audiologist providing comprehensive hearing evaluations, hearing aid fittings, and personalized care for Seminole County residents.
+              Licensed Hearing Aid Specialist providing comprehensive hearing evaluations, hearing aid fittings, and personalized care for Seminole County residents.
             </motion.p>
             
             <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4" variants={staggerItem}>
