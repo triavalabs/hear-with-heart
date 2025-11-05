@@ -33,7 +33,7 @@ const ResourcesPage = () => {
               <div className="bg-white border border-border-gray p-6 rounded-lg">
                 <p className="text-body-gray mb-4">We accept most major insurance plans, including:</p>
                 <ul className="list-disc list-inside text-body-gray space-y-2 mb-4">
-                  <li>United</li>
+                  <li>UnitedHealthcare</li>
                   <li>Blue Cross Blue Shield</li>
                   <li>UnitedHealthcare</li>
                   <li>Aetna</li>
