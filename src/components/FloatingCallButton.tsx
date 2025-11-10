@@ -5,7 +5,7 @@ const FloatingCallButton = () => {
   return (
     <motion.a
       href="tel:+14073667766"
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95"
+      className="fixed bottom-24 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95"
       style={{
         background: 'linear-gradient(135deg, hsl(174, 55%, 42%), hsl(174, 52%, 50%))',
       }}
@@ -17,7 +17,7 @@ const FloatingCallButton = () => {
       }}
       aria-label="Call Oviedo Hearing Center"
     >
-      <Phone className="w-6 h-6 text-white" />
+      <Phone className="w-6 h-6" style={{ color: 'hsl(25, 95%, 53%)' }} strokeWidth={2.5} />
       
       {/* Pulse animation ring */}
       <motion.div
