@@ -94,6 +94,18 @@ const Footer = () => {
             variants={fadeInUp}
           >
             <p>© {currentYear} Oviedo Hearing Center. All rights reserved.</p>
+            <p className="text-sm text-white/70 mt-4">
+              Website automation, branding, and design — powered by{" "}
+              <a 
+                href="https://pixelcloud9.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-semibold hover:opacity-80 transition-opacity"
+                style={{ color: '#FFDB66' }}
+              >
+                PixelCloud9 AI Agency
+              </a> ⚡️
+            </p>
           </motion.div>
         </div>
       </div>
