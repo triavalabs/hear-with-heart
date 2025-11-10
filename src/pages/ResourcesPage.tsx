@@ -74,17 +74,7 @@ const ResourcesPage = () => {
             </motion.div>
 
             {/* Financing Options */}
-            <div className="mb-12">
-              <h2 className="text-3xl font-bold text-charcoal mb-6">Financing Options</h2>
-              <div className="bg-soft-seafoam p-6 rounded-lg">
-                <p className="text-body-gray mb-4">We offer flexible payment plans to make quality hearing care affordable for everyone. Our financing options include:</p>
-                <ul className="list-disc list-inside text-body-gray space-y-2">
-                  <li>0% interest financing for qualified patients</li>
-                  <li>Monthly payment plans</li>
-                  <li>No credit check options available</li>
-                </ul>
-              </div>
-            </div>
+            
 
             {/* What to Expect */}
             <div>
