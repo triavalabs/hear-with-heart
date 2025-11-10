@@ -83,6 +83,12 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
+              
+              <h4 className="text-lg font-semibold mt-6 mb-3 text-white">Business Hours</h4>
+              <div className="text-white/90">
+                <p>Monday - Thursday</p>
+                <p className="font-medium">9:00 AM - 3:00 PM</p>
+              </div>
             </motion.div>
           </motion.div>
 
